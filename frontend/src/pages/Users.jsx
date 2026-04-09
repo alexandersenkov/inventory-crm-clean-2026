@@ -191,6 +191,144 @@ function AddUserModal({ onClose, onSuccess }) {
   );
 }
 
+// ================= КОМПОНЕНТ МОДАЛЬНОГО ОКНА ДЛЯ СМЕНЫ ПАРОЛЯ =================
+function ChangePasswordModal({ user, onClose, onSuccess }) {
+  const [form, setForm] = useState({
+	newPassword: "",
+	confirmPassword: ""
+  });
+  const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const validateForm = () => {
+	if (!form.newPassword) {
+	  setError("Введите новый пароль");
+	  return false;
+	}
+	if (form.newPassword.length < 4) {
+	  setError("Пароль должен быть не менее 4 символов");
+	  return false;
+	}
+	if (form.newPassword !== form.confirmPassword) {
+	  setError("Пароли не совпадают");
+	  return false;
+	}
+	return true;
+  };
+
+  const handleSubmit = async (e) => {
+	e.preventDefault();
+	
+	if (!validateForm()) return;
+
+	setLoading(true);
+	setError("");
+
+	try {
+	  const token = localStorage.getItem("token");
+	  
+	  await axios.put(`http://127.0.0.1:8000/users/${user.id}`, 
+		{ password: form.newPassword },
+		{ headers: { Authorization: `Bearer ${token}` } }
+	  );
+
+	  onSuccess();
+	  onClose();
+	  alert(`✅ Пароль для пользователя "${user.username}" успешно изменён`);
+	} catch (err) {
+	  setError("Ошибка при смене пароля");
+	} finally {
+	  setLoading(false);
+	}
+  };
+
+  return (
+	<div style={modalOverlayStyle} onClick={onClose}>
+	  <div style={modalStyle} onClick={(e) => e.stopPropagation()}>
+		<div style={modalHeaderStyle}>
+		  <h3 style={modalTitleStyle}>🔐 Смена пароля</h3>
+		  <button onClick={onClose} style={modalCloseStyle}>✕</button>
+		</div>
+
+		<p style={{ marginBottom: "20px", color: "#666", fontSize: "14px" }}>
+		  Пользователь: <strong style={{ color: "#333" }}>{user.username}</strong>
+		</p>
+
+		<form onSubmit={handleSubmit}>
+		  <div style={inputGroupStyle}>
+			<label style={labelStyle}>Новый пароль *</label>
+			<div style={passwordWrapperStyle}>
+			  <input
+				type={showPassword ? "text" : "password"}
+				placeholder="Введите новый пароль"
+				value={form.newPassword}
+				onChange={(e) => setForm({ ...form, newPassword: e.target.value })}
+				style={{...inputStyle, borderColor: error && !form.newPassword ? "#f44336" : "#ddd"}}
+				disabled={loading}
+				autoFocus
+			  />
+			  <button
+				type="button"
+				onClick={() => setShowPassword(!showPassword)}
+				style={passwordToggleStyle}
+			  >
+				{showPassword ? "👁️" : "👁️‍🗨️"}
+			  </button>
+			</div>
+		  </div>
+
+		  <div style={inputGroupStyle}>
+			<label style={labelStyle}>Подтверждение пароля *</label>
+			<input
+			  type={showPassword ? "text" : "password"}
+			  placeholder="Повторите новый пароль"
+			  value={form.confirmPassword}
+			  onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })}
+			  style={{
+				...inputStyle,
+				borderColor: error && form.newPassword !== form.confirmPassword ? "#f44336" : "#ddd"
+			  }}
+			  disabled={loading}
+			/>
+		  </div>
+
+		  {error && (
+			<div style={errorStyle}>
+			  <span>⚠️</span> {error}
+			</div>
+		  )}
+
+		  <div style={modalActionsStyle}>
+			<button
+			  type="button"
+			  onClick={onClose}
+			  style={cancelButtonStyle}
+			  disabled={loading}
+			>
+			  Отмена
+			</button>
+			<button
+			  type="submit"
+			  style={submitButtonStyle}
+			  disabled={loading}
+			>
+			  {loading ? (
+				<>
+				  <span style={spinnerSmallStyle} />
+				  Сохранение...
+				</>
+			  ) : (
+				"Сохранить"
+			  )}
+			</button>
+		  </div>
+		</form>
+	  </div>
+	</div>
+  );
+}
+
 // ================= ОСНОВНОЙ КОМПОНЕНТ USERS =================
 export default function Users() {
   const [users, setUsers] = useState([]);
@@ -199,6 +337,7 @@ export default function Users() {
   const [currentUser, setCurrentUser] = useState(null);
   const [showAddModal, setShowAddModal] = useState(false);
   const [editingUser, setEditingUser] = useState(null);
+  const [changingPassword, setChangingPassword] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -294,6 +433,14 @@ export default function Users() {
 		/>
 	  )}
 
+	  {changingPassword && (
+		<ChangePasswordModal
+		  user={changingPassword}
+		  onClose={() => setChangingPassword(null)}
+		  onSuccess={fetchData}
+		/>
+	  )}
+
 	  <div style={headerStyle}>
 		<div>
 		  <h1 style={titleStyle}>
@@ -384,15 +531,27 @@ export default function Users() {
 				  )}
 				</td>
 				<td style={tdStyle}>
-				  {currentUser?.username !== user.username && currentUser?.role === "admin" && (
+				  <div style={{ display: "flex", gap: "4px" }}>
+					{/* Кнопка смены пароля */}
 					<button
-					  onClick={() => handleDeleteUser(user.id, user.username)}
-					  style={deleteButtonStyle}
-					  title="Удалить пользователя"
+					  onClick={() => setChangingPassword(user)}
+					  style={changePasswordButtonStyle}
+					  title={currentUser?.username === user.username ? "Сменить свой пароль" : "Сменить пароль пользователя"}
 					>
-					  🗑️
+					  {currentUser?.username === user.username ? "🔐 Сменить пароль" : "🔑"}
 					</button>
-				  )}
+					
+					{/* Кнопка удаления (не для себя) */}
+					{currentUser?.username !== user.username && currentUser?.role === "admin" && (
+					  <button
+						onClick={() => handleDeleteUser(user.id, user.username)}
+						style={deleteButtonStyle}
+						title="Удалить пользователя"
+					  >
+						🗑️
+					  </button>
+					)}
+				  </div>
 				</td>
 			  </tr>
 			))}
@@ -591,9 +750,23 @@ const defaultBadgeStyle = {
   fontSize: "12px"
 };
 
+const changePasswordButtonStyle = {
+  background: "none",
+  border: "1px solid #ddd",
+  fontSize: "13px",
+  cursor: "pointer",
+  padding: "4px 10px",
+  borderRadius: "4px",
+  color: "#666",
+  transition: "all 0.2s",
+  display: "flex",
+  alignItems: "center",
+  gap: "4px"
+};
+
 const deleteButtonStyle = {
   background: "none",
-  border: "none",
+  border: "1px solid #ddd",
   fontSize: "16px",
   cursor: "pointer",
   padding: "4px 8px",
@@ -627,7 +800,7 @@ const spinnerStyle = {
   animation: "spin 1s linear infinite"
 };
 
-// Стили модального окна
+// Стили модальных окон
 const modalOverlayStyle = {
   position: "fixed",
   top: 0,
