@@ -1,0 +1,64 @@
+from fastapi import FastAPI, Depends, HTTPException
+from sqlalchemy.orm import Session
+
+from database import engine, SessionLocal
+from models import Base, Equipment
+from schemas import EquipmentCreate, EquipmentUpdate, EquipmentResponse
+
+app = FastAPI()
+
+Base.metadata.create_all(bind=engine)
+
+
+# dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post("/equipment", response_model=EquipmentResponse)
+def create_equipment(data: EquipmentCreate, db: Session = Depends(get_db)):
+    eq = Equipment(
+        name=data.name,
+        type=data.type,
+        serial_number=data.serial,
+        status=data.status
+    )
+
+    db.add(eq)
+    db.commit()
+    db.refresh(eq)
+
+    return eq
+
+
+@app.get("/equipment", response_model=list[EquipmentResponse])
+def get_all(db: Session = Depends(get_db)):
+    return db.query(Equipment).all()
+
+
+@app.get("/equipment/{id}", response_model=EquipmentResponse)
+def get_one(id: int, db: Session = Depends(get_db)):
+    eq = db.query(Equipment).filter(Equipment.id == id).first()
+
+    if not eq:
+        raise HTTPException(status_code=404, detail="Not found")
+
+    return eq
+
+
+@app.put("/equipment/{id}", response_model=EquipmentResponse)
+def update_equipment(id: int, data: EquipmentUpdate, db: Session = Depends(get_db)):
+    eq = db.query(Equipment).filter(Equipment.id == id).first()
+
+    if not eq:
+        raise HTTPException(status_code=404, detail="Not found")
+
+    if data.name is not None:
+        eq.name = data.name
+    if data.type is not None:
+        eq.type = data.type
+    
