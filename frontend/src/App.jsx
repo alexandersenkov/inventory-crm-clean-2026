@@ -6,6 +6,8 @@ import EditEquipment from "./pages/EditEquipment";
 import Login from "./pages/Login";
 import History from "./pages/History";
 import Dashboard from "./pages/Dashboard";
+import Users from "./pages/Users";
+import Register from "./pages/Register";
 
 function Navbar({ user, setUser }) {
   const location = useLocation();
@@ -21,6 +23,11 @@ function Navbar({ user, setUser }) {
     { name: "Оборудование", path: "/equipment" },
     { name: "История", path: "/history" },
   ];
+
+  // Добавляем пункт "Пользователи" только для админов
+  if (user?.role === "admin") {
+    menu.push({ name: "👥 Пользователи", path: "/users" });
+  }
 
   return (
     <div style={{
@@ -50,9 +57,20 @@ function Navbar({ user, setUser }) {
         {user && (
           <>
             <span style={{ marginRight: "15px" }}>
-              👤 {user.username} ({user.role})
+              👤 {user.username} ({user.role === "admin" ? "Админ" : "Пользователь"})
             </span>
-            <button onClick={logout}>Выйти</button>
+            <button 
+              onClick={logout}
+              style={{
+                padding: "6px 16px",
+                background: "none",
+                border: "1px solid #ddd",
+                borderRadius: "4px",
+                cursor: "pointer"
+              }}
+            >
+              Выйти
+            </button>
           </>
         )}
       </div>
@@ -83,6 +101,8 @@ function App() {
         <Route path="/equipment/add" element={<PrivateRoute><AddEquipment /></PrivateRoute>} />
         <Route path="/equipment/edit/:id" element={<PrivateRoute><EditEquipment /></PrivateRoute>} />
         <Route path="/history" element={<PrivateRoute><History /></PrivateRoute>} />
+        <Route path="/users" element={<PrivateRoute><Users /></PrivateRoute>} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
