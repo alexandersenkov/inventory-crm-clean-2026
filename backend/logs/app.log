@@ -1,0 +1,354 @@
+2026-04-10 11:16:19 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-04-10 11:16:19 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-04-10 11:16:19 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-04-10 11:16:19 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-04-10 11:16:19 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 3.86ms
+2026-04-10 11:16:19 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 6.24ms
+2026-04-10 11:16:19 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 7.91ms
+2026-04-10 11:16:19 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 8.39ms
+2026-04-10 11:16:19 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:16:19 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:16:19 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 39.85ms
+2026-04-10 11:16:19 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:16:19 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 49.87ms
+2026-04-10 11:16:19 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:16:19 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 29.44ms
+2026-04-10 11:16:19 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 27.33ms
+2026-04-10 11:16:57 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:16:57 | WARNING  | main | main.py:131 | Auth attempt without token
+2026-04-10 11:16:57 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 3.06ms
+2026-04-10 11:16:57 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:16:57 | WARNING  | main | main.py:131 | Auth attempt without token
+2026-04-10 11:16:57 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 3.88ms
+2026-04-10 11:16:58 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-04-10 11:16:58 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-04-10 11:16:58 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 2.55ms
+2026-04-10 11:16:58 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 2.28ms
+2026-04-10 11:16:58 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:16:58 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 4.95ms
+2026-04-10 11:16:58 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:16:58 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 5.79ms
+2026-04-10 11:16:59 | INFO     | main | main.py:71 | → OPTIONS /users | Client: 127.0.0.1
+2026-04-10 11:16:59 | INFO     | main | main.py:71 | → OPTIONS /users/stats | Client: 127.0.0.1
+2026-04-10 11:16:59 | INFO     | main | main.py:74 | ← OPTIONS /users | Status: 200 | Time: 3.38ms
+2026-04-10 11:16:59 | INFO     | main | main.py:74 | ← OPTIONS /users/stats | Status: 200 | Time: 1.88ms
+2026-04-10 11:16:59 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-04-10 11:16:59 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-04-10 11:16:59 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 25.51ms
+2026-04-10 11:16:59 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 23.79ms
+2026-04-10 11:16:59 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-04-10 11:16:59 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-04-10 11:16:59 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 7.91ms
+2026-04-10 11:16:59 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 11.41ms
+2026-04-10 11:24:42 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-04-10 11:24:42 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-04-10 11:24:42 | WARNING  | main | main.py:144 | User from token not found: admin
+2026-04-10 11:24:42 | INFO     | main | main.py:74 | ← GET /users | Status: 401 | Time: 37.38ms
+2026-04-10 11:24:42 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-04-10 11:24:42 | WARNING  | main | main.py:144 | User from token not found: admin
+2026-04-10 11:24:42 | INFO     | main | main.py:74 | ← GET /users | Status: 401 | Time: 9.96ms
+2026-04-10 11:24:42 | WARNING  | main | main.py:144 | User from token not found: admin
+2026-04-10 11:24:42 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 401 | Time: 83.37ms
+2026-04-10 11:24:42 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-04-10 11:24:42 | WARNING  | main | main.py:144 | User from token not found: admin
+2026-04-10 11:24:42 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 401 | Time: 11.43ms
+2026-04-10 11:24:44 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:24:44 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:24:44 | WARNING  | main | main.py:144 | User from token not found: admin
+2026-04-10 11:24:44 | WARNING  | main | main.py:144 | User from token not found: admin
+2026-04-10 11:24:44 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 12.18ms
+2026-04-10 11:24:44 | INFO     | main | main.py:74 | ← GET /history | Status: 401 | Time: 11.23ms
+2026-04-10 11:24:44 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:24:44 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:24:44 | WARNING  | main | main.py:144 | User from token not found: admin
+2026-04-10 11:24:44 | WARNING  | main | main.py:144 | User from token not found: admin
+2026-04-10 11:24:44 | INFO     | main | main.py:74 | ← GET /history | Status: 401 | Time: 8.53ms
+2026-04-10 11:24:44 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 11.25ms
+2026-04-10 11:24:48 | INFO     | main | main.py:71 | → OPTIONS /login | Client: 127.0.0.1
+2026-04-10 11:24:48 | INFO     | main | main.py:74 | ← OPTIONS /login | Status: 200 | Time: 0.77ms
+2026-04-10 11:24:48 | INFO     | main | main.py:71 | → POST /login | Client: 127.0.0.1
+2026-04-10 11:24:48 | INFO     | main | main.py:226 | Login attempt for user: admin from IP: 127.0.0.1
+2026-04-10 11:24:48 | WARNING  | main | main.py:229 | Failed login for user: admin
+2026-04-10 11:24:48 | INFO     | main | main.py:74 | ← POST /login | Status: 400 | Time: 9.52ms
+2026-04-10 11:24:55 | INFO     | main | main.py:71 | → POST /login | Client: 127.0.0.1
+2026-04-10 11:24:55 | INFO     | main | main.py:226 | Login attempt for user: admin from IP: 127.0.0.1
+2026-04-10 11:24:55 | WARNING  | main | main.py:229 | Failed login for user: admin
+2026-04-10 11:24:55 | INFO     | main | main.py:74 | ← POST /login | Status: 400 | Time: 9.97ms
+2026-04-10 11:25:20 | INFO     | main | main.py:71 | → POST /login | Client: 127.0.0.1
+2026-04-10 11:25:20 | INFO     | main | main.py:226 | Login attempt for user: asenkov from IP: 127.0.0.1
+2026-04-10 11:25:20 | WARNING  | main | main.py:229 | Failed login for user: asenkov
+2026-04-10 11:25:20 | INFO     | main | main.py:74 | ← POST /login | Status: 400 | Time: 11.73ms
+2026-04-10 11:25:26 | INFO     | main | main.py:71 | → POST /login | Client: 127.0.0.1
+2026-04-10 11:25:26 | INFO     | main | main.py:226 | Login attempt for user: asenkov from IP: 127.0.0.1
+2026-04-10 11:25:26 | ERROR    | main | main.py:123 | Failed to write audit log: (psycopg2.errors.UndefinedColumn) column "equipment_id" of relation "history" does not exist
+LINE 1: INSERT INTO history ("user", action, equipment_id, equipment...
+                                             ^
+
+[SQL: INSERT INTO history ("user", action, equipment_id, equipment_name, changes, ip_address) VALUES (%(user)s, %(action)s, %(equipment_id)s, %(equipment_name)s, %(changes)s, %(ip_address)s) RETURNING history.id, history.timestamp]
+[parameters: {'user': 'asenkov', 'action': 'LOGIN', 'equipment_id': None, 'equipment_name': None, 'changes': None, 'ip_address': '127.0.0.1'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-10 11:25:26 | ERROR    | main | main.py:80 | Unhandled exception: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.UndefinedColumn) column "equipment_id" of relation "history" does not exist
+LINE 1: INSERT INTO history ("user", action, equipment_id, equipment...
+                                             ^
+
+[SQL: INSERT INTO history ("user", action, equipment_id, equipment_name, changes, ip_address) VALUES (%(user)s, %(action)s, %(equipment_id)s, %(equipment_name)s, %(changes)s, %(ip_address)s) RETURNING history.id, history.timestamp]
+[parameters: {'user': 'asenkov', 'action': 'LOGIN', 'equipment_id': None, 'equipment_name': None, 'changes': None, 'ip_address': '127.0.0.1'}]
+(Background on this error at: https://sqlalche.me/e/20/f405) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 72, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 239, in login
+    logger.info(f"User logged in: {user.username}")
+                                   ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/attributes.py", line 569, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/attributes.py", line 1096, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/attributes.py", line 1126, in _fire_loader_callables
+    return state._load_expired(state, passive)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state.py", line 828, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/loading.py", line 1674, in load_scalar_attributes
+    result = load_on_ident(
+        session,
+    ...<4 lines>...
+        no_autoflush=no_autoflush,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/loading.py", line 510, in load_on_ident
+    return load_on_pk_identity(
+        session,
+    ...<11 lines>...
+        is_user_refresh=is_user_refresh,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/loading.py", line 695, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2239, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2108, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 101, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 971, in _raise_for_prerequisite_state
+    raise sa_exc.PendingRollbackError(
+    ...<6 lines>...
+    )
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.UndefinedColumn) column "equipment_id" of relation "history" does not exist
+LINE 1: INSERT INTO history ("user", action, equipment_id, equipment...
+                                             ^
+
+[SQL: INSERT INTO history ("user", action, equipment_id, equipment_name, changes, ip_address) VALUES (%(user)s, %(action)s, %(equipment_id)s, %(equipment_name)s, %(changes)s, %(ip_address)s) RETURNING history.id, history.timestamp]
+[parameters: {'user': 'asenkov', 'action': 'LOGIN', 'equipment_id': None, 'equipment_name': None, 'changes': None, 'ip_address': '127.0.0.1'}]
+(Background on this error at: https://sqlalche.me/e/20/f405) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-04-10 11:28:57 | INFO     | main | main.py:71 | → POST /login | Client: 127.0.0.1
+2026-04-10 11:28:57 | INFO     | main | main.py:226 | Login attempt for user: asenkov from IP: 127.0.0.1
+2026-04-10 11:28:57 | WARNING  | main | main.py:229 | Failed login for user: asenkov
+2026-04-10 11:28:57 | INFO     | main | main.py:74 | ← POST /login | Status: 400 | Time: 28.62ms
+2026-04-10 11:29:27 | INFO     | main | main.py:71 | → GET /docs | Client: 127.0.0.1
+2026-04-10 11:29:27 | INFO     | main | main.py:74 | ← GET /docs | Status: 200 | Time: 3.51ms
+2026-04-10 11:29:28 | INFO     | main | main.py:71 | → GET /openapi.json | Client: 127.0.0.1
+2026-04-10 11:29:28 | INFO     | main | main.py:74 | ← GET /openapi.json | Status: 200 | Time: 76.98ms
+2026-04-10 11:29:57 | INFO     | main | main.py:71 | → POST /register | Client: 127.0.0.1
+2026-04-10 11:29:57 | INFO     | main | main.py:202 | Registration attempt for username: asenkov from IP: 127.0.0.1
+2026-04-10 11:29:58 | INFO     | main | main.py:221 | User registered successfully: asenkov with role admin
+2026-04-10 11:29:58 | INFO     | main | main.py:74 | ← POST /register | Status: 200 | Time: 57.13ms
+2026-04-10 11:29:59 | INFO     | main | main.py:71 | → POST /register | Client: 127.0.0.1
+2026-04-10 11:29:59 | INFO     | main | main.py:202 | Registration attempt for username: asenkov from IP: 127.0.0.1
+2026-04-10 11:29:59 | WARNING  | main | main.py:205 | Registration failed: username asenkov already exists
+2026-04-10 11:29:59 | INFO     | main | main.py:74 | ← POST /register | Status: 400 | Time: 8.77ms
+2026-04-10 11:30:22 | INFO     | main | main.py:71 | → POST /login | Client: 127.0.0.1
+2026-04-10 11:30:22 | INFO     | main | main.py:226 | Login attempt for user: asenkov from IP: 127.0.0.1
+2026-04-10 11:30:22 | WARNING  | main | main.py:229 | Failed login for user: asenkov
+2026-04-10 11:30:22 | INFO     | main | main.py:74 | ← POST /login | Status: 400 | Time: 10.89ms
+2026-04-10 11:30:28 | INFO     | main | main.py:71 | → POST /login | Client: 127.0.0.1
+2026-04-10 11:30:28 | INFO     | main | main.py:226 | Login attempt for user: asenkov from IP: 127.0.0.1
+2026-04-10 11:30:28 | INFO     | main | main.py:239 | User logged in: asenkov
+2026-04-10 11:30:28 | INFO     | main | main.py:74 | ← POST /login | Status: 200 | Time: 18.15ms
+2026-04-10 11:30:28 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-04-10 11:30:28 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 1.51ms
+2026-04-10 11:30:28 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-04-10 11:30:28 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-04-10 11:30:28 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-04-10 11:30:28 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:28 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 2.80ms
+2026-04-10 11:30:28 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 3.14ms
+2026-04-10 11:30:28 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 3.71ms
+2026-04-10 11:30:28 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:28 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 29.49ms
+2026-04-10 11:30:28 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:28 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 25.24ms
+2026-04-10 11:30:28 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 75.31ms
+2026-04-10 11:30:28 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:28 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 13.75ms
+2026-04-10 11:30:31 | INFO     | main | main.py:71 | → OPTIONS /users | Client: 127.0.0.1
+2026-04-10 11:30:31 | INFO     | main | main.py:71 | → OPTIONS /users/stats | Client: 127.0.0.1
+2026-04-10 11:30:31 | INFO     | main | main.py:71 | → OPTIONS /users | Client: 127.0.0.1
+2026-04-10 11:30:31 | INFO     | main | main.py:71 | → OPTIONS /users/stats | Client: 127.0.0.1
+2026-04-10 11:30:31 | INFO     | main | main.py:74 | ← OPTIONS /users | Status: 200 | Time: 3.16ms
+2026-04-10 11:30:31 | INFO     | main | main.py:74 | ← OPTIONS /users/stats | Status: 200 | Time: 2.72ms
+2026-04-10 11:30:31 | INFO     | main | main.py:74 | ← OPTIONS /users | Status: 200 | Time: 2.91ms
+2026-04-10 11:30:31 | INFO     | main | main.py:74 | ← OPTIONS /users/stats | Status: 200 | Time: 3.83ms
+2026-04-10 11:30:31 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-04-10 11:30:31 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-04-10 11:30:31 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 18.94ms
+2026-04-10 11:30:31 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-04-10 11:30:31 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 33.65ms
+2026-04-10 11:30:31 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 17.12ms
+2026-04-10 11:30:31 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-04-10 11:30:31 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 24.82ms
+2026-04-10 11:30:35 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-04-10 11:30:35 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-04-10 11:30:35 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 3.00ms
+2026-04-10 11:30:35 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 2.97ms
+2026-04-10 11:30:35 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:35 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 11.08ms
+2026-04-10 11:30:35 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:35 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 10.26ms
+2026-04-10 11:30:36 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:36 | WARNING  | main | main.py:131 | Auth attempt without token
+2026-04-10 11:30:36 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 3.65ms
+2026-04-10 11:30:36 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:36 | WARNING  | main | main.py:131 | Auth attempt without token
+2026-04-10 11:30:36 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 4.49ms
+2026-04-10 11:30:36 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:36 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 10.83ms
+2026-04-10 11:30:37 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:37 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 9.47ms
+2026-04-10 11:30:45 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:45 | WARNING  | main | main.py:131 | Auth attempt without token
+2026-04-10 11:30:45 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 5.70ms
+2026-04-10 11:30:45 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:45 | WARNING  | main | main.py:131 | Auth attempt without token
+2026-04-10 11:30:45 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 3.52ms
+2026-04-10 11:30:46 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:46 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:46 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 16.20ms
+2026-04-10 11:30:46 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:46 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 15.53ms
+2026-04-10 11:30:46 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:46 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 12.00ms
+2026-04-10 11:30:46 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 14.10ms
+2026-04-10 11:30:47 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-04-10 11:30:47 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-04-10 11:30:47 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 12.53ms
+2026-04-10 11:30:47 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-04-10 11:30:47 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 18.51ms
+2026-04-10 11:30:47 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-04-10 11:30:47 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 14.39ms
+2026-04-10 11:30:47 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 16.92ms
+2026-04-10 11:30:58 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:58 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 11.66ms
+2026-04-10 11:30:58 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:58 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 11.19ms
+2026-04-10 11:30:58 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:58 | WARNING  | main | main.py:131 | Auth attempt without token
+2026-04-10 11:30:58 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 24.82ms
+2026-04-10 11:30:58 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:58 | WARNING  | main | main.py:131 | Auth attempt without token
+2026-04-10 11:30:58 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 5.48ms
+2026-04-10 11:30:59 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:59 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:59 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 14.13ms
+2026-04-10 11:30:59 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:30:59 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 17.00ms
+2026-04-10 11:30:59 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-04-10 11:30:59 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 25.41ms
+2026-04-10 11:30:59 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 32.09ms
+2026-04-10 11:31:04 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:31:04 | WARNING  | main | main.py:131 | Auth attempt without token
+2026-04-10 11:31:04 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 2.84ms
+2026-04-10 11:31:04 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-04-10 11:31:04 | WARNING  | main | main.py:131 | Auth attempt without token
+2026-04-10 11:31:04 | INFO     | main | main.py:74 | ← GET /equipment | Status: 401 | Time: 4.85ms

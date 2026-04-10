@@ -1,13 +1,12 @@
+# backend/database.py
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-# ================= DATABASE SETTINGS =================
-DATABASE_URL = "sqlite:///./inventory.db"  # локальная SQLite база, файл создается автоматически
+# Подключение к PostgreSQL в Docker
+# Если бэкенд запускается НЕ в контейнере, используем localhost
+DATABASE_URL = "postgresql://admin:admin@localhost:5432/inventory"
 
-engine = create_engine(
-	DATABASE_URL, connect_args={"check_same_thread": False}
-)
-
+engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
