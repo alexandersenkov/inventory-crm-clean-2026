@@ -25,7 +25,7 @@ export default function Dashboard() {
       const token = localStorage.getItem("token");
       
       const [equipRes, historyRes] = await Promise.all([
-        axios.get("http://127.0.0.1:8000/equipment", {
+        axios.get("http://127.0.0.1:8000/equipment?limit=1000", {
           headers: { Authorization: `Bearer ${token}` }
         }),
         axios.get("http://127.0.0.1:8000/history?limit=10", {
@@ -33,18 +33,22 @@ export default function Dashboard() {
         })
       ]);
 
-      const equipData = equipRes.data;
-      setEquipment(equipData);
+      // 👇 ВАЖНО: теперь ответ содержит объект с полем items
+      const equipData = equipRes.data.items || equipRes.data;
+      // Если API вернуло массив (старая версия), используем его
+      const equipArray = Array.isArray(equipData) ? equipData : equipData;
+      
+      setEquipment(equipArray);
       setHistory(historyRes.data);
 
       // Подсчёт статистики
       const statsData = {
-        total: equipData.length,
-        inWork: equipData.filter(e => e.status === "в работе").length,
-        inReserve: equipData.filter(e => e.status === "в резерве").length,
-        inRepair: equipData.filter(e => e.status === "в ремонте").length,
-        toWriteOff: equipData.filter(e => e.status === "на списание").length,
-        writtenOff: equipData.filter(e => e.status === "списан").length
+        total: equipArray.length,
+        inWork: equipArray.filter(e => e.status === "в работе").length,
+        inReserve: equipArray.filter(e => e.status === "в резерве").length,
+        inRepair: equipArray.filter(e => e.status === "в ремонте").length,
+        toWriteOff: equipArray.filter(e => e.status === "на списание").length,
+        writtenOff: equipArray.filter(e => e.status === "списан").length
       };
       setStats(statsData);
     } catch (error) {
@@ -184,7 +188,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Статус-бар (прогресс по статусам) */}
+      {/* Статус-бар */}
       <div style={statusBarContainerStyle}>
         <div style={statusBarTitleStyle}>Распределение по статусам</div>
         <div style={statusBarStyle}>
@@ -224,7 +228,6 @@ export default function Dashboard() {
 
       {/* Две колонки: Топ производителей и Топ локаций */}
       <div style={twoColumnGridStyle}>
-        {/* Топ производителей */}
         <div style={panelStyle}>
           <div style={panelHeaderStyle}>
             <span style={panelIconStyle}>🏢</span>
@@ -259,7 +262,6 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Топ локаций */}
         <div style={panelStyle}>
           <div style={panelHeaderStyle}>
             <span style={panelIconStyle}>📍</span>
@@ -313,7 +315,6 @@ export default function Dashboard() {
                       {action.action === "UPDATE" && "изменил(а)"}
                       {action.action === "DELETE" && "удалил(а)"}
                       {action.action === "LOGIN" && "вошёл(ла) в систему"}
-                      {action.action === "REGISTER" && "зарегистрировался(ась)"}
                     </span>
                     {action.equipment_name && (
                       <span style={actionEquipmentStyle}>{action.equipment_name}</span>
