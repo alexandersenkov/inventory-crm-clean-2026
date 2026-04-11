@@ -6,7 +6,7 @@ export default function Dashboard() {
   const [equipment, setEquipment] = useState([]);
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [expandedStreet, setExpandedStreet] = useState(null); // для спойлера локаций
+  const [expandedStreet, setExpandedStreet] = useState(null);
   const [stats, setStats] = useState({
     total: 0,
     inWork: 0,
@@ -24,7 +24,7 @@ export default function Dashboard() {
   const fetchData = async () => {
     try {
       const token = localStorage.getItem("token");
-      
+
       const [equipRes, historyRes] = await Promise.all([
         axios.get("http://127.0.0.1:8000/equipment?limit=10000", {
           headers: { Authorization: `Bearer ${token}` }
@@ -36,7 +36,7 @@ export default function Dashboard() {
 
       const equipData = equipRes.data.items || equipRes.data;
       const equipArray = Array.isArray(equipData) ? equipData : [];
-      
+
       setEquipment(equipArray);
       setHistory(historyRes.data);
 
@@ -56,7 +56,31 @@ export default function Dashboard() {
     }
   };
 
-  // ========== ПРОИЗВОДИТЕЛИ: полный список ==========
+  // Экспорт в Excel
+  const handleExport = async () => {
+    try {
+      const token = localStorage.getItem("token");
+      const response = await axios.get("http://127.0.0.1:8000/equipment/export", {
+        headers: { Authorization: `Bearer ${token}` },
+        responseType: 'blob'
+      });
+      
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement('a');
+      link.href = url;
+      const date = new Date().toISOString().slice(0,10);
+      link.setAttribute('download', `equipment_export_${date}.xlsx`);
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Ошибка экспорта:", error);
+      alert("Не удалось выполнить экспорт");
+    }
+  };
+
+  // ========== ПРОИЗВОДИТЕЛИ ==========
   const vendorStats = equipment.reduce((acc, item) => {
     const vendor = item.vendor?.trim() || "Не указан";
     acc[vendor] = (acc[vendor] || 0) + 1;
@@ -64,13 +88,13 @@ export default function Dashboard() {
   }, {});
 
   const allVendors = Object.entries(vendorStats)
-    .sort((a, b) => b[1] - a[1]); // по убыванию количества
+    .sort((a, b) => b[1] - a[1]);
 
-  // ========== ЛОКАЦИИ: группировка по улицам с раскрытием корпусов ==========
+  // ========== ЛОКАЦИИ ==========
   const locationData = equipment.reduce((acc, item) => {
     const street = item.street?.trim() || "Не указана";
     const frame = item.frame ? `Корпус ${item.frame}` : "Без корпуса";
-    
+
     if (!acc[street]) {
       acc[street] = { total: 0, frames: {} };
     }
@@ -105,13 +129,13 @@ export default function Dashboard() {
     const now = new Date();
     const diffMs = now - date;
     const diffMins = Math.floor(diffMs / 60000);
-    
+
     if (diffMins < 1) return "только что";
     if (diffMins < 60) return `${diffMins} мин. назад`;
-    
+
     const diffHours = Math.floor(diffMins / 60);
     if (diffHours < 24) return `${diffHours} ч. назад`;
-    
+
     return date.toLocaleDateString("ru-RU");
   };
 
@@ -211,7 +235,6 @@ export default function Dashboard() {
 
       {/* Две колонки: Производители и Локации */}
       <div style={twoColumnGridStyle}>
-        {/* ПРОИЗВОДИТЕЛИ (полный список) */}
         <div style={panelStyle}>
           <div style={panelHeaderStyle}>
             <span style={panelIconStyle}>🏢</span>
@@ -237,7 +260,6 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* ЛОКАЦИИ (сгруппированы по улицам, с раскрытием корпусов) */}
         <div style={panelStyle}>
           <div style={panelHeaderStyle}>
             <span style={panelIconStyle}>📍</span>
@@ -335,6 +357,10 @@ export default function Dashboard() {
         <button onClick={fetchData} style={{...quickActionButtonStyle, background: "#f5f5f5", color: "#333"}}>
           <span style={quickActionIconStyle}>🔄</span>
           Обновить данные
+        </button>
+        <button onClick={handleExport} style={{...quickActionButtonStyle, background: "#4caf50", color: "white"}}>
+          <span style={quickActionIconStyle}>📊</span>
+          Экспорт в Excel
         </button>
       </div>
     </div>
@@ -640,7 +666,8 @@ const actionTimeStyle = {
 const quickActionsStyle = {
   display: "flex",
   gap: "12px",
-  marginTop: "24px"
+  marginTop: "24px",
+  flexWrap: "wrap"
 };
 
 const quickActionButtonStyle = {

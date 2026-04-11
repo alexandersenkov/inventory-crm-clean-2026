@@ -259,7 +259,17 @@ def get_equipment(
         query = query.filter(
             Equipment.name.contains(search) |
             Equipment.inv_number.contains(search) |
-            Equipment.serial_number.contains(search)
+            Equipment.serial_number.contains(search) |
+            Equipment.MAC_address.contains(search) |
+            Equipment.factory_number.contains(search) |
+            Equipment.vendor.contains(search) |
+            Equipment.model.contains(search) |
+            Equipment.hostname.contains(search) |
+            Equipment.street.contains(search) |
+            Equipment.floor.contains(search) |
+            Equipment.room.contains(search) |
+            Equipment.Mol.contains(search) |
+            Equipment.Mol_fio.contains(search)
         )
     total = query.count()
     items = query.offset(skip).limit(limit).all()
@@ -349,20 +359,47 @@ def delete_equipment(
     return {"ok": True}
 
 @app.get("/equipment/export")
-def export_equipment(db: Session = Depends(get_db),
-                     current_user: User = Depends(get_current_user)):
+def export_equipment(
+    status: Optional[str] = None,
+    search: Optional[str] = None,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    """Экспорт оборудования в Excel с учётом фильтров."""
     if current_user.role != "admin":
         raise HTTPException(status_code=403, detail="Admin only")
-    items = db.query(Equipment).all()
+    
+    query = db.query(Equipment)
+    if status:
+        query = query.filter(Equipment.status == status)
+    if search:
+        query = query.filter(
+            Equipment.name.contains(search) |
+            Equipment.inv_number.contains(search) |
+            Equipment.serial_number.contains(search) |
+            Equipment.MAC_address.contains(search) |
+            Equipment.factory_number.contains(search) |
+            Equipment.vendor.contains(search) |
+            Equipment.model.contains(search) |
+            Equipment.hostname.contains(search) |
+            Equipment.street.contains(search) |
+            Equipment.floor.contains(search) |
+            Equipment.room.contains(search) |
+            Equipment.Mol.contains(search) |
+            Equipment.Mol_fio.contains(search)
+        )
+    
+    items = query.all()
     df = pd.DataFrame([{c.name: getattr(it, c.name) for c in it.__table__.columns} for it in items])
     output = io.BytesIO()
     with pd.ExcelWriter(output, engine='openpyxl') as writer:
         df.to_excel(writer, index=False, sheet_name='Оборудование')
     output.seek(0)
+    
     return StreamingResponse(
         output,
         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-        headers={"Content-Disposition": "attachment; filename=equipment.xlsx"}
+        headers={"Content-Disposition": f"attachment; filename=equipment_export_{datetime.now().date()}.xlsx"}
     )
 
 # ---------- УПРАВЛЕНИЕ ПОЛЬЗОВАТЕЛЯМИ (ADMIN) ----------
