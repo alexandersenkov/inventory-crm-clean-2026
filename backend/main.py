@@ -13,7 +13,7 @@ import time
 import logging
 import io
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from typing import Optional, List
 from sqlalchemy import func
 
@@ -50,7 +50,7 @@ logging.getLogger("uvicorn.error").setLevel(logging.INFO)
 # -----------------------------------------
 
 SECRET_KEY = "secret123"
-revoked_tokens = set()   # чёрный список токенов
+revoked_tokens = set()
 
 app = FastAPI()
 
@@ -148,20 +148,24 @@ class LoginSchema(BaseModel):
 
 class EquipmentSchema(BaseModel):
     name: str
-    inv_num: str = ""
-    sn: str = ""
-    mac: str = ""
-    zav_num: str = ""
+    inv_number: str = ""
+    serial_number: str = ""
+    MAC_address: str = ""
+    factory_number: str = ""
     vendor: str = ""
     model: str = ""
     hostname: str = ""
     street: str = ""
-    kor: str = ""
-    etaj: str = ""
-    kab: str = ""
+    frame: Optional[int] = None
+    floor: str = ""
+    room: str = ""
     status: str = "в работе"
     condition: str = "готов к эксплуатации"
     other: str = ""
+    Mol: str = ""
+    Mol_fio: str = ""
+    Inventory_dt: Optional[date] = None
+    update_dt: Optional[date] = None
 
 class HistoryResponse(BaseModel):
     id: int
@@ -254,61 +258,94 @@ def get_equipment(
     if search:
         query = query.filter(
             Equipment.name.contains(search) |
-            Equipment.inv_num.contains(search) |
-            Equipment.sn.contains(search)
+            Equipment.inv_number.contains(search) |
+            Equipment.serial_number.contains(search)
         )
     total = query.count()
     items = query.offset(skip).limit(limit).all()
     return {"total": total, "skip": skip, "limit": limit, "items": items}
 
 @app.post("/equipment")
-def create_equipment(item: EquipmentSchema, request: Request,
-                     db: Session = Depends(get_db),
-                     current_user: User = Depends(get_current_user)):
-    logger.info(f"Create equipment: {item.name} by {current_user.username}")
-    new = Equipment(**item.model_dump())
+def create_equipment(
+    item: EquipmentSchema,
+    request: Request,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    logger.info(f"Creating equipment: {item.name} by {current_user.username}")
+    new = Equipment(**item.dict())
     db.add(new)
     db.commit()
     db.refresh(new)
-    log_action(db, current_user.username, "CREATE", equipment_id=new.id,
-               equipment_name=new.name, changes={"data": item.model_dump()},
-               ip_address=request.client.host)
+
+    log_action(
+        db=db,
+        user=current_user.username,
+        action="CREATE",
+        equipment_id=new.id,
+        equipment_name=new.name,
+        changes={"data": item.dict()},
+        ip_address=request.client.host
+    )
     return new
 
 @app.put("/equipment/{id}")
-def update_equipment(id: int, data: dict, request: Request,
-                     db: Session = Depends(get_db),
-                     current_user: User = Depends(get_current_user)):
+def update_equipment(
+    id: int,
+    data: dict,
+    request: Request,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
     item = db.get(Equipment, id)
     if not item:
         raise HTTPException(status_code=404, detail="Not found")
+
     old_data = {c.name: getattr(item, c.name) for c in item.__table__.columns if c.name != "id"}
     for key, value in data.items():
         if hasattr(item, key):
             setattr(item, key, value)
     db.commit()
     db.refresh(item)
+
     new_data = {c.name: getattr(item, c.name) for c in item.__table__.columns if c.name != "id"}
     changed_fields = {k: {"before": old_data[k], "after": new_data[k]} for k in old_data if old_data[k] != new_data[k]}
-    log_action(db, current_user.username, "UPDATE", equipment_id=item.id,
-               equipment_name=item.name,
-               changes={"before": old_data, "after": new_data, "changed": changed_fields},
-               ip_address=request.client.host)
+
+    log_action(
+        db=db,
+        user=current_user.username,
+        action="UPDATE",
+        equipment_id=item.id,
+        equipment_name=item.name,
+        changes={"before": old_data, "after": new_data, "changed": changed_fields},
+        ip_address=request.client.host
+    )
     return item
 
 @app.delete("/equipment/{id}")
-def delete_equipment(id: int, request: Request,
-                     db: Session = Depends(get_db),
-                     current_user: User = Depends(get_current_user)):
+def delete_equipment(
+    id: int,
+    request: Request,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
     item = db.get(Equipment, id)
     if not item:
         raise HTTPException(status_code=404, detail="Not found")
+
     deleted_data = {c.name: getattr(item, c.name) for c in item.__table__.columns}
     db.delete(item)
     db.commit()
-    log_action(db, current_user.username, "DELETE", equipment_id=id,
-               equipment_name=item.name, changes={"deleted_data": deleted_data},
-               ip_address=request.client.host)
+
+    log_action(
+        db=db,
+        user=current_user.username,
+        action="DELETE",
+        equipment_id=id,
+        equipment_name=item.name,
+        changes={"deleted_data": deleted_data},
+        ip_address=request.client.host
+    )
     return {"ok": True}
 
 @app.get("/equipment/export")

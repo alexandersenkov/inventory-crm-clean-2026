@@ -1,395 +1,100 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
-export default function AddEquipment() {
+export default function EditEquipment() {
+  const { id } = useParams();
   const navigate = useNavigate();
-
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
   const [form, setForm] = useState({
-    name: "",
-    inv_num: "",
-    sn: "",
-    mac: "",
-    zav_num: "",
-    vendor: "",
-    model: "",
-    hostname: "",
-    street: "",
-    kor: "",
-    etaj: "",
-    kab: "",
-    status: "в работе",
-    condition: "готов к эксплуатации",
-    other: ""
+    name: "", inv_number: "", serial_number: "", MAC_address: "", factory_number: "",
+    vendor: "", model: "", hostname: "", street: "",
+    frame: "", floor: "", room: "",
+    status: "в работе", condition: "готов к эксплуатации", other: "",
+    Mol: "", Mol_fio: "", Inventory_dt: "", update_dt: ""
   });
 
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState({});
+  useEffect(() => {
+    const fetchEquipment = async () => {
+      try {
+        const token = localStorage.getItem("token");
+        const res = await axios.get("http://127.0.0.1:8000/equipment?limit=10000", {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        const items = res.data.items || res.data;
+        const item = items.find(i => i.id === parseInt(id));
+        if (item) {
+          setForm({
+            name: item.name || "", inv_number: item.inv_number || "", serial_number: item.serial_number || "",
+            MAC_address: item.MAC_address || "", factory_number: item.factory_number || "",
+            vendor: item.vendor || "", model: item.model || "", hostname: item.hostname || "",
+            street: item.street || "", frame: item.frame ?? "", floor: item.floor || "", room: item.room || "",
+            status: item.status || "в работе", condition: item.condition || "готов к эксплуатации", other: item.other || "",
+            Mol: item.Mol || "", Mol_fio: item.Mol_fio || "",
+            Inventory_dt: item.Inventory_dt || "", update_dt: item.update_dt || ""
+          });
+        }
+      } catch (error) {
+        console.error("Ошибка загрузки:", error);
+        alert("Не удалось загрузить данные");
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchEquipment();
+  }, [id]);
 
-  // Валидация обязательных полей
-  const validate = () => {
-    const newErrors = {};
-    if (!form.name.trim()) newErrors.name = "Название обязательно";
-    return newErrors;
-  };
+  const handleChange = (key, value) => setForm({ ...form, [key]: value });
 
-  const handleChange = (key, value) => {
-    setForm({ ...form, [key]: value });
-    // Очистка ошибки при вводе
-    if (errors[key]) {
-      setErrors({ ...errors, [key]: null });
-    }
-  };
-
-  const save = async () => {
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
-    }
-
-    setLoading(true);
+  const handleSave = async () => {
+    if (!form.name) { alert("Название обязательно!"); return; }
+    setSaving(true);
     try {
-      await axios.post("http://127.0.0.1:8000/equipment", form);
+      const token = localStorage.getItem("token");
+      await axios.put(`http://127.0.0.1:8000/equipment/${id}`, form, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
       navigate("/equipment");
     } catch (error) {
-      console.error("Ошибка при сохранении:", error);
-      alert("Не удалось сохранить оборудование");
+      console.error("Ошибка сохранения:", error);
+      alert("Не удалось сохранить изменения");
     } finally {
-      setLoading(false);
+      setSaving(false);
     }
   };
 
-  const statusOptions = ["в работе", "в резерве", "в ремонте", "на списание", "списан"];
-  const conditionOptions = ["готов к эксплуатации", "требует обслуживания", "неисправен", "в ремонте"];
-
-  // Группы полей для организации формы
-  const fieldGroups = [
-    {
-      title: "📋 Основная информация",
-      fields: [
-        { key: "name", label: "Название*", placeholder: "Например: Ноутбук Dell XPS 13", type: "text", required: true },
-        { key: "inv_num", label: "Инвентарный номер", placeholder: "INV-2024-001", type: "text" },
-        { key: "zav_num", label: "Заводской номер", placeholder: "Заводской номер", type: "text" },
-      ]
-    },
-    {
-      title: "🔧 Технические характеристики",
-      fields: [
-        { key: "vendor", label: "Производитель", placeholder: "Dell, HP, Apple...", type: "text" },
-        { key: "model", label: "Модель", placeholder: "XPS 13 9310", type: "text" },
-        { key: "sn", label: "Серийный номер (S/N)", placeholder: "SN123456789", type: "text" },
-        { key: "mac", label: "MAC-адрес", placeholder: "00:1A:2B:3C:4D:5E", type: "text" },
-        { key: "hostname", label: "Имя хоста", placeholder: "PC-001", type: "text" },
-      ]
-    },
-    {
-      title: "📍 Местоположение",
-      fields: [
-        { key: "street", label: "Улица", placeholder: "ул. Ленина", type: "text" },
-        { 
-          key: "kor", 
-          label: "Корпус", 
-          placeholder: "1", 
-          type: "number",
-          min: 1
-        },
-        { 
-          key: "etaj", 
-          label: "Этаж", 
-          placeholder: "3", 
-          type: "number",
-          min: 1
-        },
-        { 
-          key: "kab", 
-          label: "Кабинет", 
-          placeholder: "305", 
-          type: "text"
-        },
-      ]
-    },
-    {
-      title: "📊 Статус и состояние",
-      fields: [
-        { key: "status", label: "Статус", type: "select", options: statusOptions },
-        { key: "condition", label: "Состояние", type: "select", options: conditionOptions },
-      ]
-    },
-    {
-      title: "📝 Дополнительно",
-      fields: [
-        { key: "other", label: "Примечания", type: "textarea", placeholder: "Дополнительная информация..." },
-      ]
-    }
-  ];
-
-  const renderField = (field) => {
-    const value = form[field.key];
-    const error = errors[field.key];
-
-    switch (field.type) {
-      case "select":
-        return (
-          <select
-            value={value}
-            onChange={(e) => handleChange(field.key, e.target.value)}
-            style={{
-              ...inputStyle,
-              background: "white",
-              cursor: "pointer"
-            }}
-          >
-            {field.options.map(opt => (
-              <option key={opt} value={opt}>{opt}</option>
-            ))}
-          </select>
-        );
-
-      case "textarea":
-        return (
-          <textarea
-            placeholder={field.placeholder}
-            value={value}
-            onChange={(e) => handleChange(field.key, e.target.value)}
-            style={{
-              ...inputStyle,
-              minHeight: "80px",
-              resize: "vertical"
-            }}
-          />
-        );
-
-      default:
-        return (
-          <input
-            type={field.type}
-            placeholder={field.placeholder}
-            value={value}
-            onChange={(e) => handleChange(field.key, e.target.value)}
-            required={field.required}
-            min={field.min}
-            style={{
-              ...inputStyle,
-              borderColor: error ? "#f44336" : "#ddd"
-            }}
-          />
-        );
-    }
-  };
+  if (loading) return <div style={{ padding: 50, textAlign: "center" }}>Загрузка...</div>;
 
   return (
-    <div style={{
-      minHeight: "100vh",
-      background: "#f5f7fa",
-      padding: "24px"
-    }}>
-      <div style={{
-        maxWidth: "1200px",
-        margin: "0 auto",
-        background: "white",
-        borderRadius: "12px",
-        boxShadow: "0 4px 6px rgba(0,0,0,0.05)",
-        overflow: "hidden"
-      }}>
-        {/* Заголовок */}
-        <div style={{
-          padding: "24px 32px",
-          borderBottom: "1px solid #e0e0e0",
-          background: "linear-gradient(to right, #fafafa, white)"
-        }}>
-          <h2 style={{
-            margin: 0,
-            fontSize: "24px",
-            fontWeight: "600",
-            color: "#1a1a1a",
-            display: "flex",
-            alignItems: "center",
-            gap: "12px"
-          }}>
-            <span style={{
-              background: "#1976d2",
-              color: "white",
-              width: "32px",
-              height: "32px",
-              borderRadius: "8px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "18px"
-            }}>+</span>
-            Добавление нового оборудования
-          </h2>
-          <p style={{
-            margin: "8px 0 0 44px",
-            color: "#666",
-            fontSize: "14px"
-          }}>
-            Заполните информацию об оборудовании. Поля, отмеченные *, обязательны для заполнения.
-          </p>
-        </div>
-
-        {/* Форма */}
-        <div style={{ padding: "32px" }}>
-          {fieldGroups.map((group, groupIndex) => (
-            <div key={groupIndex} style={{
-              marginBottom: groupIndex < fieldGroups.length - 1 ? "32px" : 0,
-              paddingBottom: groupIndex < fieldGroups.length - 1 ? "24px" : 0,
-              borderBottom: groupIndex < fieldGroups.length - 1 ? "1px solid #eee" : "none"
-            }}>
-              <h3 style={{
-                margin: "0 0 20px 0",
-                fontSize: "18px",
-                fontWeight: "500",
-                color: "#333",
-                display: "flex",
-                alignItems: "center",
-                gap: "8px"
-              }}>
-                {group.title}
-              </h3>
-              
-              <div style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-                gap: "20px"
-              }}>
-                {group.fields.map((field) => (
-                  <div key={field.key} style={{
-                    gridColumn: field.type === "textarea" ? "1 / -1" : "auto"
-                  }}>
-                    <label style={{
-                      display: "block",
-                      marginBottom: "6px",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                      color: "#444"
-                    }}>
-                      {field.label}
-                      {field.required && <span style={{ color: "#f44336", marginLeft: "4px" }}>*</span>}
-                    </label>
-                    
-                    {renderField(field)}
-                    
-                    {errors[field.key] && (
-                      <div style={{
-                        color: "#f44336",
-                        fontSize: "12px",
-                        marginTop: "4px"
-                      }}>
-                        {errors[field.key]}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-
-          {/* Кнопки */}
-          <div style={{
-            display: "flex",
-            gap: "16px",
-            marginTop: "32px",
-            paddingTop: "24px",
-            borderTop: "1px solid #eee"
-          }}>
-            <button
-              onClick={save}
-              disabled={loading}
-              style={{
-                padding: "12px 32px",
-                background: loading ? "#ccc" : "#1976d2",
-                color: "white",
-                border: "none",
-                borderRadius: "8px",
-                fontSize: "16px",
-                fontWeight: "500",
-                cursor: loading ? "not-allowed" : "pointer",
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                transition: "all 0.2s",
-                opacity: loading ? 0.7 : 1
-              }}
-              onMouseEnter={(e) => !loading && (e.target.style.background = "#1565c0")}
-              onMouseLeave={(e) => !loading && (e.target.style.background = "#1976d2")}
-            >
-              {loading ? (
-                <>
-                  <span style={{ 
-                    width: "16px", 
-                    height: "16px", 
-                    border: "2px solid white",
-                    borderTopColor: "transparent",
-                    borderRadius: "50%",
-                    display: "inline-block",
-                    animation: "spin 1s linear infinite"
-                  }} />
-                  Сохранение...
-                </>
-              ) : (
-                "💾 Сохранить"
-              )}
-            </button>
-            
-            <button
-              onClick={() => navigate("/equipment")}
-              style={{
-                padding: "12px 24px",
-                background: "transparent",
-                color: "#666",
-                border: "1px solid #ddd",
-                borderRadius: "8px",
-                fontSize: "16px",
-                cursor: "pointer",
-                transition: "all 0.2s"
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.background = "#f5f5f5";
-                e.target.style.borderColor = "#bbb";
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.background = "transparent";
-                e.target.style.borderColor = "#ddd";
-              }}
-            >
-              ← Отмена
-            </button>
-          </div>
-        </div>
+    <div style={{ padding: 24, maxWidth: 1000, margin: "0 auto" }}>
+      <h2>✏️ Редактирование (ID: {id})</h2>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+        {/* Поля аналогично AddEquipment, используя правильные ключи */}
+        <input placeholder="Название" value={form.name} onChange={e => handleChange("name", e.target.value)} />
+        <input placeholder="Инв. номер" value={form.inv_number} onChange={e => handleChange("inv_number", e.target.value)} />
+        <input placeholder="Серийный номер" value={form.serial_number} onChange={e => handleChange("serial_number", e.target.value)} />
+        <input placeholder="MAC" value={form.MAC_address} onChange={e => handleChange("MAC_address", e.target.value)} />
+        <input placeholder="Зав. номер" value={form.factory_number} onChange={e => handleChange("factory_number", e.target.value)} />
+        <input placeholder="Vendor" value={form.vendor} onChange={e => handleChange("vendor", e.target.value)} />
+        <input placeholder="Model" value={form.model} onChange={e => handleChange("model", e.target.value)} />
+        <input placeholder="Hostname" value={form.hostname} onChange={e => handleChange("hostname", e.target.value)} />
+        <input placeholder="Street" value={form.street} onChange={e => handleChange("street", e.target.value)} />
+        <input type="number" placeholder="Корпус" value={form.frame} onChange={e => handleChange("frame", e.target.value)} />
+        <input placeholder="Этаж" value={form.floor} onChange={e => handleChange("floor", e.target.value)} />
+        <input placeholder="Кабинет" value={form.room} onChange={e => handleChange("room", e.target.value)} />
+        <input placeholder="МОЛ" value={form.Mol} onChange={e => handleChange("Mol", e.target.value)} />
+        <input placeholder="ФИО МОЛ" value={form.Mol_fio} onChange={e => handleChange("Mol_fio", e.target.value)} />
+        <input type="date" value={form.Inventory_dt} onChange={e => handleChange("Inventory_dt", e.target.value)} />
+        <input type="date" value={form.update_dt} onChange={e => handleChange("update_dt", e.target.value)} />
+        {/* Select'ы для статуса и состояния оставьте как были */}
       </div>
-
-      {/* Анимация для спиннера */}
-      <style>{`
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      `}</style>
+      <div style={{ marginTop: 24 }}>
+        <button onClick={handleSave} disabled={saving} style={{ padding: "12px 32px", background: "#1976d2", color: "white", border: "none", borderRadius: 8, cursor: "pointer" }}>
+          {saving ? "Сохранение..." : "💾 Сохранить"}
+        </button>
+        <button onClick={() => navigate("/equipment")} style={{ marginLeft: 12, padding: "12px 24px", background: "none", border: "1px solid #ddd", borderRadius: 8, cursor: "pointer" }}>← Отмена</button>
+      </div>
     </div>
   );
 }
-
-// Общий стиль для полей ввода
-const inputStyle = {
-  width: "100%",
-  padding: "10px 12px",
-  fontSize: "14px",
-  border: "1px solid #ddd",
-  borderRadius: "6px",
-  outline: "none",
-  transition: "all 0.2s",
-  boxSizing: "border-box",
-  fontFamily: "inherit"
-};
-
-// Добавим стили для фокуса глобально
-const style = document.createElement('style');
-style.textContent = `
-  input:focus, select:focus, textarea:focus {
-    border-color: #1976d2 !important;
-    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1) !important;
-  }
-`;
-document.head.appendChild(style);

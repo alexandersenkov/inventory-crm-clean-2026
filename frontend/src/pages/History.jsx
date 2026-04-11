@@ -15,7 +15,7 @@ export default function History() {
   const fetchHistory = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://127.0.0.1:8000/history", {
+      const res = await axios.get("http://127.0.0.1:8000/history?limit=200", {
         headers: { Authorization: `Bearer ${token}` }
       });
       setHistory(res.data);
@@ -73,6 +73,7 @@ export default function History() {
     }
   };
 
+  // Улучшенная функция рендеринга изменений с поддержкой удаления
   const renderChanges = (changesJson) => {
     const changes = parseChanges(changesJson);
     if (!changes) return null;
@@ -110,18 +111,24 @@ export default function History() {
       );
     }
     
-    // Для DELETE — показываем удалённые данные
+    // Для DELETE — показываем удалённые данные (ВСЕ поля)
     if (changes.deleted_data) {
+      const deletedFields = changes.deleted_data;
       return (
         <div style={changesContainerStyle}>
-          <div style={changesTitleStyle}>🗑️ Удалённое оборудование:</div>
-          {Object.entries(changes.deleted_data).slice(0, 8).map(([key, value]) => (
-            value && (
-              <div key={key} style={changeItemStyle}>
-                <strong style={fieldNameStyle}>{key}:</strong> {value}
-              </div>
-            )
-          ))}
+          <div style={changesTitleStyle}>🗑️ Удалённое оборудование (все данные):</div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "4px 16px" }}>
+            {Object.entries(deletedFields).map(([key, value]) => {
+              // Пропускаем служебные поля
+              if (key === "_sa_instance_state" || key === "id") return null;
+              return (
+                <div key={key} style={{ fontSize: "13px" }}>
+                  <strong style={{ color: "#555" }}>{key}:</strong>{" "}
+                  <span style={{ color: "#333" }}>{value || "—"}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       );
     }
@@ -255,7 +262,7 @@ export default function History() {
   );
 }
 
-// Стили (добавлены новые)
+// Стили (аналогичны предыдущим)
 const expandHintStyle = {
   fontSize: "12px",
   color: "#1976d2",

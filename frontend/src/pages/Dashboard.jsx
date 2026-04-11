@@ -6,6 +6,7 @@ export default function Dashboard() {
   const [equipment, setEquipment] = useState([]);
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [expandedStreet, setExpandedStreet] = useState(null); // для спойлера локаций
   const [stats, setStats] = useState({
     total: 0,
     inWork: 0,
@@ -25,7 +26,7 @@ export default function Dashboard() {
       const token = localStorage.getItem("token");
       
       const [equipRes, historyRes] = await Promise.all([
-        axios.get("http://127.0.0.1:8000/equipment?limit=1000", {
+        axios.get("http://127.0.0.1:8000/equipment?limit=10000", {
           headers: { Authorization: `Bearer ${token}` }
         }),
         axios.get("http://127.0.0.1:8000/history?limit=10", {
@@ -33,15 +34,12 @@ export default function Dashboard() {
         })
       ]);
 
-      // 👇 ВАЖНО: теперь ответ содержит объект с полем items
       const equipData = equipRes.data.items || equipRes.data;
-      // Если API вернуло массив (старая версия), используем его
-      const equipArray = Array.isArray(equipData) ? equipData : equipData;
+      const equipArray = Array.isArray(equipData) ? equipData : [];
       
       setEquipment(equipArray);
       setHistory(historyRes.data);
 
-      // Подсчёт статистики
       const statsData = {
         total: equipArray.length,
         inWork: equipArray.filter(e => e.status === "в работе").length,
@@ -58,32 +56,37 @@ export default function Dashboard() {
     }
   };
 
-  // Статистика по производителям
+  // ========== ПРОИЗВОДИТЕЛИ: полный список ==========
   const vendorStats = equipment.reduce((acc, item) => {
-    if (item.vendor) {
-      acc[item.vendor] = (acc[item.vendor] || 0) + 1;
-    }
+    const vendor = item.vendor?.trim() || "Не указан";
+    acc[vendor] = (acc[vendor] || 0) + 1;
     return acc;
   }, {});
 
-  const topVendors = Object.entries(vendorStats)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 5);
+  const allVendors = Object.entries(vendorStats)
+    .sort((a, b) => b[1] - a[1]); // по убыванию количества
 
-  // Статистика по локациям
-  const locationStats = equipment.reduce((acc, item) => {
-    if (item.street) {
-      const location = `${item.street}${item.kor ? `, к.${item.kor}` : ""}`;
-      acc[location] = (acc[location] || 0) + 1;
+  // ========== ЛОКАЦИИ: группировка по улицам с раскрытием корпусов ==========
+  const locationData = equipment.reduce((acc, item) => {
+    const street = item.street?.trim() || "Не указана";
+    const frame = item.frame ? `Корпус ${item.frame}` : "Без корпуса";
+    
+    if (!acc[street]) {
+      acc[street] = { total: 0, frames: {} };
     }
+    acc[street].total += 1;
+    acc[street].frames[frame] = (acc[street].frames[frame] || 0) + 1;
     return acc;
   }, {});
 
-  const topLocations = Object.entries(locationStats)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 5);
+  const streets = Object.entries(locationData)
+    .sort((a, b) => b[1].total - a[1].total);
 
-  // Последние действия
+  const toggleStreet = (street) => {
+    setExpandedStreet(expandedStreet === street ? null : street);
+  };
+
+  // ========== Последние действия ==========
   const recentActions = history.slice(0, 5);
 
   const getActionIcon = (action) => {
@@ -134,14 +137,13 @@ export default function Dashboard() {
         </p>
       </div>
 
-      {/* Карточки с основной статистикой */}
+      {/* Карточки статистики */}
       <div style={statsGridStyle}>
         <div style={{...statCardStyle, background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"}}>
           <div style={statIconStyle}>🖥️</div>
           <div style={statValueStyle}>{stats.total}</div>
           <div style={statLabelStyle}>Всего оборудования</div>
         </div>
-
         <div style={{...statCardStyle, background: "linear-gradient(135deg, #4caf50 0%, #2e7d32 100%)"}}>
           <div style={statIconStyle}>✅</div>
           <div style={statValueStyle}>{stats.inWork}</div>
@@ -150,7 +152,6 @@ export default function Dashboard() {
             {stats.total > 0 ? Math.round((stats.inWork / stats.total) * 100) : 0}%
           </div>
         </div>
-
         <div style={{...statCardStyle, background: "linear-gradient(135deg, #2196f3 0%, #1565c0 100%)"}}>
           <div style={statIconStyle}>📦</div>
           <div style={statValueStyle}>{stats.inReserve}</div>
@@ -159,7 +160,6 @@ export default function Dashboard() {
             {stats.total > 0 ? Math.round((stats.inReserve / stats.total) * 100) : 0}%
           </div>
         </div>
-
         <div style={{...statCardStyle, background: "linear-gradient(135deg, #ff9800 0%, #e65100 100%)"}}>
           <div style={statIconStyle}>🔧</div>
           <div style={statValueStyle}>{stats.inRepair}</div>
@@ -168,7 +168,6 @@ export default function Dashboard() {
             {stats.total > 0 ? Math.round((stats.inRepair / stats.total) * 100) : 0}%
           </div>
         </div>
-
         <div style={{...statCardStyle, background: "linear-gradient(135deg, #f44336 0%, #b71c1c 100%)"}}>
           <div style={statIconStyle}>⚠️</div>
           <div style={statValueStyle}>{stats.toWriteOff}</div>
@@ -177,7 +176,6 @@ export default function Dashboard() {
             {stats.total > 0 ? Math.round((stats.toWriteOff / stats.total) * 100) : 0}%
           </div>
         </div>
-
         <div style={{...statCardStyle, background: "linear-gradient(135deg, #9e9e9e 0%, #616161 100%)"}}>
           <div style={statIconStyle}>🗑️</div>
           <div style={statValueStyle}>{stats.writtenOff}</div>
@@ -194,26 +192,11 @@ export default function Dashboard() {
         <div style={statusBarStyle}>
           {stats.total > 0 && (
             <>
-              <div 
-                style={{...statusBarSegmentStyle, background: "#4caf50", width: `${(stats.inWork / stats.total) * 100}%`}}
-                title={`В работе: ${stats.inWork}`}
-              />
-              <div 
-                style={{...statusBarSegmentStyle, background: "#2196f3", width: `${(stats.inReserve / stats.total) * 100}%`}}
-                title={`В резерве: ${stats.inReserve}`}
-              />
-              <div 
-                style={{...statusBarSegmentStyle, background: "#ff9800", width: `${(stats.inRepair / stats.total) * 100}%`}}
-                title={`В ремонте: ${stats.inRepair}`}
-              />
-              <div 
-                style={{...statusBarSegmentStyle, background: "#f44336", width: `${(stats.toWriteOff / stats.total) * 100}%`}}
-                title={`На списание: ${stats.toWriteOff}`}
-              />
-              <div 
-                style={{...statusBarSegmentStyle, background: "#9e9e9e", width: `${(stats.writtenOff / stats.total) * 100}%`}}
-                title={`Списано: ${stats.writtenOff}`}
-              />
+              <div style={{...statusBarSegmentStyle, background: "#4caf50", width: `${(stats.inWork / stats.total) * 100}%`}} />
+              <div style={{...statusBarSegmentStyle, background: "#2196f3", width: `${(stats.inReserve / stats.total) * 100}%`}} />
+              <div style={{...statusBarSegmentStyle, background: "#ff9800", width: `${(stats.inRepair / stats.total) * 100}%`}} />
+              <div style={{...statusBarSegmentStyle, background: "#f44336", width: `${(stats.toWriteOff / stats.total) * 100}%`}} />
+              <div style={{...statusBarSegmentStyle, background: "#9e9e9e", width: `${(stats.writtenOff / stats.total) * 100}%`}} />
             </>
           )}
         </div>
@@ -226,33 +209,25 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Две колонки: Топ производителей и Топ локаций */}
+      {/* Две колонки: Производители и Локации */}
       <div style={twoColumnGridStyle}>
+        {/* ПРОИЗВОДИТЕЛИ (полный список) */}
         <div style={panelStyle}>
           <div style={panelHeaderStyle}>
             <span style={panelIconStyle}>🏢</span>
-            <h3 style={panelTitleStyle}>Топ производителей</h3>
+            <h3 style={panelTitleStyle}>Производители ({allVendors.length})</h3>
           </div>
-          <div style={panelContentStyle}>
-            {topVendors.length > 0 ? (
-              topVendors.map(([vendor, count], index) => (
+          <div style={{ maxHeight: "400px", overflowY: "auto" }}>
+            {allVendors.length > 0 ? (
+              allVendors.map(([vendor, count], index) => (
                 <div key={vendor} style={listItemStyle}>
                   <div style={listItemLeftStyle}>
                     <span style={listItemIndexStyle(index)}>{index + 1}</span>
-                    <span style={listItemNameStyle}>{vendor || "Не указан"}</span>
+                    <span style={listItemNameStyle}>{vendor}</span>
                   </div>
                   <div style={listItemRightStyle}>
                     <span style={listItemCountStyle}>{count}</span>
                     <span style={listItemUnitStyle}>шт.</span>
-                    <div style={miniBarContainerStyle}>
-                      <div 
-                        style={{
-                          ...miniBarStyle,
-                          width: `${(count / topVendors[0][1]) * 100}%`,
-                          background: index === 0 ? "#667eea" : "#90caf9"
-                        }}
-                      />
-                    </div>
                   </div>
                 </div>
               ))
@@ -262,23 +237,43 @@ export default function Dashboard() {
           </div>
         </div>
 
+        {/* ЛОКАЦИИ (сгруппированы по улицам, с раскрытием корпусов) */}
         <div style={panelStyle}>
           <div style={panelHeaderStyle}>
             <span style={panelIconStyle}>📍</span>
-            <h3 style={panelTitleStyle}>Топ локаций</h3>
+            <h3 style={panelTitleStyle}>Локации</h3>
           </div>
-          <div style={panelContentStyle}>
-            {topLocations.length > 0 ? (
-              topLocations.map(([location, count], index) => (
-                <div key={location} style={listItemStyle}>
-                  <div style={listItemLeftStyle}>
-                    <span style={listItemIndexStyle(index)}>{index + 1}</span>
-                    <span style={listItemNameStyle}>{location || "Не указана"}</span>
+          <div style={{ maxHeight: "400px", overflowY: "auto" }}>
+            {streets.length > 0 ? (
+              streets.map(([street, data]) => (
+                <div key={street}>
+                  <div
+                    style={{ ...listItemStyle, cursor: "pointer", background: expandedStreet === street ? "#f5f5f5" : "transparent" }}
+                    onClick={() => toggleStreet(street)}
+                  >
+                    <div style={listItemLeftStyle}>
+                      <span style={{ marginRight: "8px", fontSize: "14px" }}>
+                        {expandedStreet === street ? "▼" : "▶"}
+                      </span>
+                      <span style={listItemNameStyle}>{street}</span>
+                    </div>
+                    <div style={listItemRightStyle}>
+                      <span style={listItemCountStyle}>{data.total}</span>
+                      <span style={listItemUnitStyle}>шт.</span>
+                    </div>
                   </div>
-                  <div style={listItemRightStyle}>
-                    <span style={listItemCountStyle}>{count}</span>
-                    <span style={listItemUnitStyle}>шт.</span>
-                  </div>
+                  {expandedStreet === street && (
+                    <div style={{ paddingLeft: "32px", background: "#fafafa" }}>
+                      {Object.entries(data.frames)
+                        .sort((a, b) => b[1] - a[1])
+                        .map(([frame, count]) => (
+                          <div key={frame} style={{ ...listItemStyle, borderBottom: "none", padding: "8px 20px" }}>
+                            <span style={{ fontSize: "13px", color: "#555" }}>{frame}</span>
+                            <span style={{ fontWeight: "500", fontSize: "14px" }}>{count} шт.</span>
+                          </div>
+                        ))}
+                    </div>
+                  )}
                 </div>
               ))
             ) : (
@@ -293,10 +288,7 @@ export default function Dashboard() {
         <div style={panelHeaderStyle}>
           <span style={panelIconStyle}>📋</span>
           <h3 style={panelTitleStyle}>Последние действия</h3>
-          <button 
-            onClick={() => navigate("/history")}
-            style={viewAllButtonStyle}
-          >
+          <button onClick={() => navigate("/history")} style={viewAllButtonStyle}>
             Смотреть все →
           </button>
         </div>
@@ -332,24 +324,15 @@ export default function Dashboard() {
 
       {/* Быстрые действия */}
       <div style={quickActionsStyle}>
-        <button 
-          onClick={() => navigate("/equipment/add")}
-          style={quickActionButtonStyle}
-        >
+        <button onClick={() => navigate("/equipment/add")} style={quickActionButtonStyle}>
           <span style={quickActionIconStyle}>➕</span>
           Добавить оборудование
         </button>
-        <button 
-          onClick={() => navigate("/equipment")}
-          style={{...quickActionButtonStyle, background: "#f5f5f5", color: "#333"}}
-        >
+        <button onClick={() => navigate("/equipment")} style={{...quickActionButtonStyle, background: "#f5f5f5", color: "#333"}}>
           <span style={quickActionIconStyle}>🔍</span>
           Смотреть всё оборудование
         </button>
-        <button 
-          onClick={fetchData}
-          style={{...quickActionButtonStyle, background: "#f5f5f5", color: "#333"}}
-        >
+        <button onClick={fetchData} style={{...quickActionButtonStyle, background: "#f5f5f5", color: "#333"}}>
           <span style={quickActionIconStyle}>🔄</span>
           Обновить данные
         </button>
@@ -369,7 +352,6 @@ const getActionColor = (action) => {
 };
 
 // ================= СТИЛИ =================
-
 const containerStyle = {
   padding: "24px",
   maxWidth: "1400px",
@@ -582,20 +564,6 @@ const listItemCountStyle = {
 const listItemUnitStyle = {
   fontSize: "12px",
   color: "#999"
-};
-
-const miniBarContainerStyle = {
-  width: "60px",
-  height: "4px",
-  background: "#eee",
-  borderRadius: "2px",
-  marginLeft: "8px",
-  overflow: "hidden"
-};
-
-const miniBarStyle = {
-  height: "100%",
-  borderRadius: "2px"
 };
 
 const emptyTextStyle = {
