@@ -14,7 +14,7 @@ import logging
 import io
 import pandas as pd
 from datetime import datetime, timedelta, date
-from typing import Optional, List
+from typing import Optional, List, Union
 from sqlalchemy import func
 
 # ---------- НАСТРОЙКА ЛОГИРОВАНИЯ ----------
@@ -275,6 +275,27 @@ def get_equipment(
     items = query.offset(skip).limit(limit).all()
     return {"total": total, "skip": skip, "limit": limit, "items": items}
 
+@app.get("/equipment/view/{identifier}")
+def view_equipment_by_identifier(
+    identifier: str,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    """
+    Просмотр карточки оборудования по инвентарному или серийному номеру.
+    """
+    # Сначала ищем точное совпадение по инвентарному номеру
+    item = db.query(Equipment).filter(Equipment.inv_number == identifier).first()
+    if item:
+        return item
+
+    # Затем по серийному номеру
+    item = db.query(Equipment).filter(Equipment.serial_number == identifier).first()
+    if item:
+        return item
+
+    raise HTTPException(status_code=404, detail="Оборудование не найдено")
+
 @app.post("/equipment")
 def create_equipment(
     item: EquipmentSchema,
@@ -310,6 +331,14 @@ def update_equipment(
     item = db.get(Equipment, id)
     if not item:
         raise HTTPException(status_code=404, detail="Not found")
+
+    # Автоматически обновляем дату последнего изменения
+    data['update_dt'] = date.today().isoformat()
+
+    # Приводим пустые строки к None для полей, где это необходимо
+    for field in ['frame', 'Inventory_dt', 'update_dt']:
+        if field in data and data[field] == '':
+            data[field] = None
 
     old_data = {c.name: getattr(item, c.name) for c in item.__table__.columns if c.name != "id"}
     for key, value in data.items():

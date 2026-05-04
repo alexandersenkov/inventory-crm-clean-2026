@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 export default function Equipment() {
@@ -44,15 +44,12 @@ export default function Equipment() {
     }
   };
 
-  // Экспорт в Excel
   const handleExport = async () => {
     try {
       const token = localStorage.getItem("token");
-      // Формируем URL с текущими параметрами поиска и статуса (если нужно)
       let url = "http://127.0.0.1:8000/equipment/export";
       const params = new URLSearchParams();
       if (search) params.append("search", search);
-      // if (statusFilter) params.append("status", statusFilter); // если добавите фильтр статуса
       if (params.toString()) url += "?" + params.toString();
       
       const response = await axios.get(url, {
@@ -119,11 +116,11 @@ export default function Equipment() {
   };
 
   const columnWidths = {
-    id: "60px", name: "150px", inv_number: "90px", serial_number: "130px", MAC_address: "150px",
-    factory_number: "100px", vendor: "120px", model: "120px", hostname: "130px",
-    street: "120px", frame: "70px", floor: "60px", room: "70px",
-    status: "110px", condition: "110px", other: "100px",
-    Mol: "80px", Mol_fio: "150px", Inventory_dt: "110px", update_dt: "110px", actions: "90px"
+    id: "60px", name: "160px", inv_number: "100px", serial_number: "140px", MAC_address: "160px",
+    factory_number: "110px", vendor: "130px", model: "130px", hostname: "140px",
+    street: "130px", frame: "70px", floor: "70px", room: "80px",
+    status: "120px", condition: "120px", other: "110px",
+    Mol: "90px", Mol_fio: "160px", Inventory_dt: "120px", update_dt: "120px", actions: "100px"
   };
 
   const formatDate = (dateStr) => {
@@ -164,7 +161,7 @@ export default function Equipment() {
       </div>
 
       <div style={{ overflow: "auto", borderRadius: 8, border: "1px solid #e0e0e0", flex: 1 }}>
-        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14, minWidth: 2300 }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14, minWidth: 2500 }}>
           <thead style={{ position: "sticky", top: 0, zIndex: 10, background: "#f5f5f5" }}>
             <tr>
               {Object.entries({
@@ -188,7 +185,11 @@ export default function Equipment() {
               sortedData.map(item => (
                 <tr key={item.id} style={{ borderBottom: "1px solid #eee" }}>
                   <td style={tdStyle}>{item.id}</td>
-                  <td style={tdStyle}>{item.name || "—"}</td>
+                  <td style={tdStyle}>
+                    <Link to={`/equipment/view/${item.inv_number || item.serial_number || item.id}`} style={{ color: "#1976d2", textDecoration: "none", fontWeight: 500 }}>
+                      {item.name || "—"}
+                    </Link>
+                  </td>
                   <td style={tdStyle}>{item.inv_number || "—"}</td>
                   <td style={tdStyle}>{item.serial_number || "—"}</td>
                   <td style={tdStyle}>{item.MAC_address || "—"}</td>

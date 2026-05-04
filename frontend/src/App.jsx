@@ -3,17 +3,14 @@ import { BrowserRouter as Router, Routes, Route, Navigate, Link, useLocation } f
 import Equipment from "./pages/Equipment";
 import AddEquipment from "./pages/AddEquipment";
 import EditEquipment from "./pages/EditEquipment";
+import EquipmentView from "./pages/EquipmentView";
 import Login from "./pages/Login";
 import History from "./pages/History";
 import Dashboard from "./pages/Dashboard";
 import Users from "./pages/Users";
-//import winston from "winston";
-
-
 
 function Navbar({ user, setUser }) {
   const location = useLocation();
-  const [hoveredItem, setHoveredItem] = React.useState(null);
 
   const logout = () => {
     localStorage.removeItem("token");
@@ -27,14 +24,12 @@ function Navbar({ user, setUser }) {
     { name: "📋 История", path: "/history" },
   ];
 
-  // Добавляем пункт "Пользователи" только для админов
   if (user?.role === "admin") {
     menu.push({ name: "👥 Пользователи", path: "/users" });
   }
 
   return (
     <div style={navbarStyle}>
-      {/* Логотип */}
       <div style={logoStyle}>
         <Link to="/" style={logoLinkStyle}>
           <span style={logoIconStyle}>📦</span>
@@ -42,24 +37,19 @@ function Navbar({ user, setUser }) {
         </Link>
       </div>
 
-      {/* Меню */}
       <div style={menuStyle}>
         {menu.map(item => {
           const isActive = location.pathname === item.path;
-          const isHovered = hoveredItem === item.path;
-          
           return (
             <Link
               key={item.path}
               to={item.path}
               style={{
                 ...menuItemStyle,
-                background: isActive ? "#1976d2" : (isHovered ? "#1976d2" : "transparent"),
-                color: (isActive || isHovered) ? "white" : "#555",
+                background: isActive ? "#1976d2" : "transparent",
+                color: isActive ? "white" : "#555",
                 border: isActive ? "1px solid #1976d2" : "1px solid transparent",
               }}
-              onMouseEnter={() => setHoveredItem(item.path)}
-              onMouseLeave={() => setHoveredItem(null)}
             >
               {item.name}
             </Link>
@@ -67,7 +57,6 @@ function Navbar({ user, setUser }) {
         })}
       </div>
 
-      {/* Профиль пользователя */}
       <div style={userStyle}>
         {user && (
           <div style={userInfoStyle}>
@@ -80,18 +69,7 @@ function Navbar({ user, setUser }) {
                 {user.role === "admin" ? "Администратор" : "Пользователь"}
               </span>
             </div>
-            <button 
-              onClick={logout}
-              style={logoutButtonStyle}
-              onMouseEnter={(e) => {
-                e.target.style.background = "#f5f5f5";
-                e.target.style.color = "#f44336";
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.background = "transparent";
-                e.target.style.color = "#666";
-              }}
-            >
+            <button onClick={logout} style={logoutButtonStyle}>
               🚪 Выйти
             </button>
           </div>
@@ -124,6 +102,7 @@ function App() {
             <Route path="/equipment" element={<PrivateRoute><Equipment /></PrivateRoute>} />
             <Route path="/equipment/add" element={<PrivateRoute><AddEquipment /></PrivateRoute>} />
             <Route path="/equipment/edit/:id" element={<PrivateRoute><EditEquipment /></PrivateRoute>} />
+            <Route path="/equipment/view/:identifier" element={<PrivateRoute><EquipmentView /></PrivateRoute>} />
             <Route path="/history" element={<PrivateRoute><History /></PrivateRoute>} />
             <Route path="/users" element={<PrivateRoute><Users /></PrivateRoute>} />
           </Routes>
@@ -135,8 +114,7 @@ function App() {
 
 export default App;
 
-// ================= СТИЛИ =================
-
+// Стили оставлены без изменений (как в последней версии)
 const appStyle = {
   minHeight: "100vh",
   display: "flex",

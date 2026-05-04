@@ -5303,3 +5303,1752 @@ RFID в QR содержит ошибку по серийному номеру DQ
 2026-05-04 09:46:46 | INFO     | main | main.py:74 | ← GET /docs | Status: 200 | Time: 7.03ms
 2026-05-04 09:46:47 | INFO     | main | main.py:71 | → GET /openapi.json | Client: 127.0.0.1
 2026-05-04 09:46:47 | INFO     | main | main.py:74 | ← GET /openapi.json | Status: 200 | Time: 102.95ms
+2026-05-04 10:01:47 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-05-04 10:01:47 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-05-04 10:01:47 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-05-04 10:01:47 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-05-04 10:01:47 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 16.97ms
+2026-05-04 10:01:47 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 14.08ms
+2026-05-04 10:01:47 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 12.18ms
+2026-05-04 10:01:47 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 13.08ms
+2026-05-04 10:01:47 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:01:47 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 10:01:47 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 160.13ms
+2026-05-04 10:01:47 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 223.33ms
+2026-05-04 10:01:47 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 10:01:47 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:01:47 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 13.25ms
+2026-05-04 10:01:47 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 100.45ms
+2026-05-04 10:10:45 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:10:45 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 10:10:45 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 264.45ms
+2026-05-04 10:10:45 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 10:10:46 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 1154.65ms
+2026-05-04 10:10:46 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:10:46 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 1115.32ms
+2026-05-04 10:10:50 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 3856.52ms
+2026-05-04 10:15:44 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:15:44 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 114.52ms
+2026-05-04 10:15:44 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:15:44 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 95.70ms
+2026-05-04 10:15:54 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:15:54 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 91.61ms
+2026-05-04 10:15:54 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:15:54 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 87.39ms
+2026-05-04 10:16:43 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:16:43 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 88.73ms
+2026-05-04 10:16:43 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:16:43 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 98.00ms
+2026-05-04 10:16:50 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:16:50 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 85.35ms
+2026-05-04 10:16:50 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:16:50 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 79.73ms
+2026-05-04 10:16:55 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:16:55 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 82.00ms
+2026-05-04 10:16:55 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:16:55 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 172.01ms
+2026-05-04 10:17:30 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:17:30 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 72.90ms
+2026-05-04 10:17:30 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:17:30 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 76.04ms
+2026-05-04 10:17:31 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:17:31 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 77.24ms
+2026-05-04 10:17:31 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:17:31 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 122.89ms
+2026-05-04 10:21:37 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-05-04 10:21:37 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-05-04 10:21:37 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 3.53ms
+2026-05-04 10:21:37 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 2.24ms
+2026-05-04 10:21:37 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:21:37 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 106.23ms
+2026-05-04 10:21:37 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:21:37 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 100.61ms
+2026-05-04 10:21:44 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:21:44 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 120.09ms
+2026-05-04 10:21:44 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:21:44 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 306.25ms
+2026-05-04 10:25:17 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:25:17 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 100.76ms
+2026-05-04 10:25:17 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:25:17 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 85.78ms
+2026-05-04 10:25:22 | INFO     | main | main.py:71 | → OPTIONS /equipment/1 | Client: 127.0.0.1
+2026-05-04 10:25:22 | INFO     | main | main.py:74 | ← OPTIONS /equipment/1 | Status: 200 | Time: 1.13ms
+2026-05-04 10:25:22 | INFO     | main | main.py:71 | → PUT /equipment/1 | Client: 127.0.0.1
+2026-05-04 10:25:22 | ERROR    | main | main.py:79 | Unhandled exception: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET "Inventory_dt"='', update_dt='2026-05-0...
+                                            ^
+
+[SQL: UPDATE equipment SET "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET "Inventory_dt"='', update_dt='2026-05-0...
+                                            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 72, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 321, in update_equipment
+    db.commit()
+    ~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        update,
+        ^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET "Inventory_dt"='', update_dt='2026-05-0...
+                                            ^
+
+[SQL: UPDATE equipment SET "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-05-04 10:25:25 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:25:25 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 80.72ms
+2026-05-04 10:25:25 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:25:26 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 80.91ms
+2026-05-04 10:25:36 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:25:36 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 80.18ms
+2026-05-04 10:25:36 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:25:36 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 79.71ms
+2026-05-04 10:25:43 | INFO     | main | main.py:71 | → PUT /equipment/1 | Client: 127.0.0.1
+2026-05-04 10:25:43 | ERROR    | main | main.py:79 | Unhandled exception: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+[SQL: UPDATE equipment SET other=%(other)s, "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'other': '1', 'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 72, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 321, in update_equipment
+    db.commit()
+    ~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        update,
+        ^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+[SQL: UPDATE equipment SET other=%(other)s, "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'other': '1', 'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-05-04 10:27:13 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:27:14 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 84.18ms
+2026-05-04 10:27:17 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:27:17 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 72.91ms
+2026-05-04 10:27:17 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:27:18 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 176.58ms
+2026-05-04 10:27:27 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:27:28 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 70.21ms
+2026-05-04 10:27:57 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:27:57 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 114.92ms
+2026-05-04 10:27:57 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:27:57 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 82.11ms
+2026-05-04 10:28:02 | INFO     | main | main.py:71 | → PUT /equipment/1 | Client: 127.0.0.1
+2026-05-04 10:28:02 | ERROR    | main | main.py:79 | Unhandled exception: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET "Inventory_dt"='', update_dt='2026-05-0...
+                                            ^
+
+[SQL: UPDATE equipment SET "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET "Inventory_dt"='', update_dt='2026-05-0...
+                                            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 72, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 321, in update_equipment
+    db.commit()
+    ~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        update,
+        ^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET "Inventory_dt"='', update_dt='2026-05-0...
+                                            ^
+
+[SQL: UPDATE equipment SET "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-05-04 10:28:06 | INFO     | main | main.py:71 | → PUT /equipment/1 | Client: 127.0.0.1
+2026-05-04 10:28:06 | ERROR    | main | main.py:79 | Unhandled exception: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+[SQL: UPDATE equipment SET other=%(other)s, "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'other': '1', 'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 72, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 321, in update_equipment
+    db.commit()
+    ~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        update,
+        ^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+[SQL: UPDATE equipment SET other=%(other)s, "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'other': '1', 'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-05-04 10:28:16 | INFO     | main | main.py:71 | → PUT /equipment/1 | Client: 127.0.0.1
+2026-05-04 10:28:16 | ERROR    | main | main.py:79 | Unhandled exception: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: ...SET factory_number='1', other='1', "Inventory_dt"='', update...
+                                                             ^
+
+[SQL: UPDATE equipment SET factory_number=%(factory_number)s, other=%(other)s, "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'factory_number': '1', 'other': '1', 'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 1: ...SET factory_number='1', other='1', "Inventory_dt"='', update...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 72, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 321, in update_equipment
+    db.commit()
+    ~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        update,
+        ^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: ...SET factory_number='1', other='1', "Inventory_dt"='', update...
+                                                             ^
+
+[SQL: UPDATE equipment SET factory_number=%(factory_number)s, other=%(other)s, "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'factory_number': '1', 'other': '1', 'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-05-04 10:28:20 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:28:20 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 73.16ms
+2026-05-04 10:28:20 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:28:20 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 80.35ms
+2026-05-04 10:28:25 | INFO     | main | main.py:71 | → PUT /equipment/1 | Client: 127.0.0.1
+2026-05-04 10:28:25 | ERROR    | main | main.py:79 | Unhandled exception: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+[SQL: UPDATE equipment SET other=%(other)s, "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'other': '1', 'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 72, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 321, in update_equipment
+    db.commit()
+    ~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        update,
+        ^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+[SQL: UPDATE equipment SET other=%(other)s, "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'other': '1', 'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-05-04 10:28:47 | INFO     | main | main.py:71 | → PUT /equipment/1 | Client: 127.0.0.1
+2026-05-04 10:28:47 | ERROR    | main | main.py:79 | Unhandled exception: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+[SQL: UPDATE equipment SET other=%(other)s, "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'other': '1', 'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InvalidDatetimeFormat: invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 72, in log_requests_middleware
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/fastapi/routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "/Users/sashasenkov/Documents/inventory-crm/backend/main.py", line 321, in update_equipment
+    db.commit()
+    ~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/util/langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 85, in save_obj
+    _emit_update_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        update,
+        ^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/orm/persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidDatetimeFormat) invalid input syntax for type date: ""
+LINE 1: UPDATE equipment SET other='1', "Inventory_dt"='', update_dt...
+                                                       ^
+
+[SQL: UPDATE equipment SET other=%(other)s, "Inventory_dt"=%(Inventory_dt)s, update_dt=%(update_dt)s WHERE equipment.id = %(equipment_id)s]
+[parameters: {'other': '1', 'Inventory_dt': '', 'update_dt': '2026-05-04', 'equipment_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-05-04 10:32:07 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-05-04 10:32:07 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 1.38ms
+2026-05-04 10:32:07 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-05-04 10:32:07 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 1.13ms
+2026-05-04 10:32:07 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:32:07 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 105.27ms
+2026-05-04 10:32:08 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:32:08 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 86.71ms
+2026-05-04 10:32:10 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:32:10 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 78.68ms
+2026-05-04 10:32:10 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:32:10 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 83.75ms
+2026-05-04 10:32:15 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:32:15 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 73.52ms
+2026-05-04 10:32:15 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:32:15 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 80.10ms
+2026-05-04 10:32:20 | INFO     | main | main.py:71 | → PUT /equipment/1 | Client: 127.0.0.1
+2026-05-04 10:32:20 | ERROR    | main | main.py:118 | Failed to write audit log: Object of type date is not JSON serializable
+2026-05-04 10:32:20 | INFO     | main | main.py:74 | ← PUT /equipment/1 | Status: 200 | Time: 33.01ms
+2026-05-04 10:32:20 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:32:20 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 84.86ms
+2026-05-04 10:32:20 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:32:20 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 89.37ms
+2026-05-04 10:47:58 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-05-04 10:47:58 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-05-04 10:47:58 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 3.37ms
+2026-05-04 10:47:58 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 2.22ms
+2026-05-04 10:47:58 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:47:59 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 296.18ms
+2026-05-04 10:47:59 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:47:59 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 104.28ms
+2026-05-04 10:50:11 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:50:12 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 773.54ms
+2026-05-04 10:50:12 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:50:13 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 762.71ms
+2026-05-04 10:55:18 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:55:20 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 1093.64ms
+2026-05-04 10:55:20 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 10:55:20 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 821.79ms
+2026-05-04 11:07:22 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:07:23 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 269.94ms
+2026-05-04 11:08:31 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:08:32 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 122.29ms
+2026-05-04 11:08:32 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:08:32 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 129.25ms
+2026-05-04 11:08:37 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/002410124-000799 | Client: 127.0.0.1
+2026-05-04 11:08:37 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/002410124-000799 | Client: 127.0.0.1
+2026-05-04 11:08:37 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/002410124-000799 | Status: 200 | Time: 1.49ms
+2026-05-04 11:08:37 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/002410124-000799 | Status: 200 | Time: 2.55ms
+2026-05-04 11:08:37 | INFO     | main | main.py:71 | → GET /equipment/view/002410124-000799 | Client: 127.0.0.1
+2026-05-04 11:08:37 | INFO     | main | main.py:74 | ← GET /equipment/view/002410124-000799 | Status: 200 | Time: 12.22ms
+2026-05-04 11:08:37 | INFO     | main | main.py:71 | → GET /equipment/view/002410124-000799 | Client: 127.0.0.1
+2026-05-04 11:08:37 | INFO     | main | main.py:74 | ← GET /equipment/view/002410124-000799 | Status: 200 | Time: 11.20ms
+2026-05-04 11:08:43 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:08:44 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 100.88ms
+2026-05-04 11:08:44 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:08:44 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 82.60ms
+2026-05-04 11:08:47 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/000410134-000251 | Client: 127.0.0.1
+2026-05-04 11:08:47 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/000410134-000251 | Client: 127.0.0.1
+2026-05-04 11:08:47 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/000410134-000251 | Status: 200 | Time: 2.94ms
+2026-05-04 11:08:47 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/000410134-000251 | Status: 200 | Time: 2.30ms
+2026-05-04 11:08:47 | INFO     | main | main.py:71 | → GET /equipment/view/000410134-000251 | Client: 127.0.0.1
+2026-05-04 11:08:47 | INFO     | main | main.py:74 | ← GET /equipment/view/000410134-000251 | Status: 200 | Time: 14.88ms
+2026-05-04 11:08:47 | INFO     | main | main.py:71 | → GET /equipment/view/000410134-000251 | Client: 127.0.0.1
+2026-05-04 11:08:47 | INFO     | main | main.py:74 | ← GET /equipment/view/000410134-000251 | Status: 200 | Time: 7.40ms
+2026-05-04 11:08:58 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:08:59 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 86.86ms
+2026-05-04 11:08:59 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:08:59 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 90.01ms
+2026-05-04 11:09:01 | INFO     | main | main.py:71 | → OPTIONS /equipment/56 | Client: 127.0.0.1
+2026-05-04 11:09:01 | INFO     | main | main.py:74 | ← OPTIONS /equipment/56 | Status: 200 | Time: 0.99ms
+2026-05-04 11:09:01 | INFO     | main | main.py:71 | → PUT /equipment/56 | Client: 127.0.0.1
+2026-05-04 11:09:01 | ERROR    | main | main.py:118 | Failed to write audit log: Object of type date is not JSON serializable
+2026-05-04 11:09:01 | INFO     | main | main.py:74 | ← PUT /equipment/56 | Status: 200 | Time: 30.25ms
+2026-05-04 11:09:01 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:02 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 103.16ms
+2026-05-04 11:09:02 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:02 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 103.97ms
+2026-05-04 11:09:11 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:11 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 184.86ms
+2026-05-04 11:09:11 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:12 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 102.64ms
+2026-05-04 11:09:13 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:13 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-05-04 11:09:13 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 4.25ms
+2026-05-04 11:09:13 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-05-04 11:09:13 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 3.51ms
+2026-05-04 11:09:13 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 11:09:13 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 139.76ms
+2026-05-04 11:09:13 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:13 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 148.15ms
+2026-05-04 11:09:13 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 11:09:13 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 107.16ms
+2026-05-04 11:09:13 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 101.17ms
+2026-05-04 11:09:14 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-05-04 11:09:14 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-05-04 11:09:14 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 2.92ms
+2026-05-04 11:09:14 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 2.17ms
+2026-05-04 11:09:14 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 11:09:14 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 22.29ms
+2026-05-04 11:09:14 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 11:09:14 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 56.41ms
+2026-05-04 11:09:16 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-05-04 11:09:16 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 2.05ms
+2026-05-04 11:09:16 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-05-04 11:09:16 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:16 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 2.00ms
+2026-05-04 11:09:16 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 113.88ms
+2026-05-04 11:09:16 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:16 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 107.82ms
+2026-05-04 11:09:17 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:17 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 11:09:17 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 30.69ms
+2026-05-04 11:09:17 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 11:09:17 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 112.13ms
+2026-05-04 11:09:17 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:17 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 87.25ms
+2026-05-04 11:09:17 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 94.66ms
+2026-05-04 11:09:17 | INFO     | main | main.py:71 | → OPTIONS /users | Client: 127.0.0.1
+2026-05-04 11:09:17 | INFO     | main | main.py:71 | → OPTIONS /users/stats | Client: 127.0.0.1
+2026-05-04 11:09:17 | INFO     | main | main.py:71 | → OPTIONS /users | Client: 127.0.0.1
+2026-05-04 11:09:17 | INFO     | main | main.py:74 | ← OPTIONS /users | Status: 200 | Time: 2.52ms
+2026-05-04 11:09:17 | INFO     | main | main.py:71 | → OPTIONS /users/stats | Client: 127.0.0.1
+2026-05-04 11:09:17 | INFO     | main | main.py:74 | ← OPTIONS /users/stats | Status: 200 | Time: 3.34ms
+2026-05-04 11:09:17 | INFO     | main | main.py:74 | ← OPTIONS /users | Status: 200 | Time: 3.65ms
+2026-05-04 11:09:17 | INFO     | main | main.py:74 | ← OPTIONS /users/stats | Status: 200 | Time: 4.17ms
+2026-05-04 11:09:17 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-05-04 11:09:17 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-05-04 11:09:18 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 11.43ms
+2026-05-04 11:09:18 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-05-04 11:09:18 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 34.59ms
+2026-05-04 11:09:18 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-05-04 11:09:18 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 13.75ms
+2026-05-04 11:09:18 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 13.03ms
+2026-05-04 11:09:18 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 11:09:18 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 17.68ms
+2026-05-04 11:09:18 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 11:09:18 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 20.62ms
+2026-05-04 11:09:19 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:19 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 112.22ms
+2026-05-04 11:09:19 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:19 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 78.62ms
+2026-05-04 11:09:20 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:20 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 11:09:20 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 9.07ms
+2026-05-04 11:09:20 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-05-04 11:09:20 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 78.73ms
+2026-05-04 11:09:20 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:20 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 76.09ms
+2026-05-04 11:09:20 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 82.69ms
+2026-05-04 11:09:22 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:22 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 77.63ms
+2026-05-04 11:09:22 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:09:22 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 76.73ms
+2026-05-04 11:09:24 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/002410124-000822 | Client: 127.0.0.1
+2026-05-04 11:09:24 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/002410124-000822 | Client: 127.0.0.1
+2026-05-04 11:09:24 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/002410124-000822 | Status: 200 | Time: 3.30ms
+2026-05-04 11:09:24 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/002410124-000822 | Status: 200 | Time: 2.38ms
+2026-05-04 11:09:24 | INFO     | main | main.py:71 | → GET /equipment/view/002410124-000822 | Client: 127.0.0.1
+2026-05-04 11:09:24 | INFO     | main | main.py:74 | ← GET /equipment/view/002410124-000822 | Status: 200 | Time: 9.97ms
+2026-05-04 11:09:24 | INFO     | main | main.py:71 | → GET /equipment/view/002410124-000822 | Client: 127.0.0.1
+2026-05-04 11:09:24 | INFO     | main | main.py:74 | ← GET /equipment/view/002410124-000822 | Status: 200 | Time: 12.99ms
+2026-05-04 11:09:37 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/DQVPJER001718033FB3000 | Client: 127.0.0.1
+2026-05-04 11:09:37 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/DQVPJER001718033FB3000 | Client: 127.0.0.1
+2026-05-04 11:09:37 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/DQVPJER001718033FB3000 | Status: 200 | Time: 1.98ms
+2026-05-04 11:09:37 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/DQVPJER001718033FB3000 | Status: 200 | Time: 1.87ms
+2026-05-04 11:09:37 | INFO     | main | main.py:71 | → GET /equipment/view/DQVPJER001718033FB3000 | Client: 127.0.0.1
+2026-05-04 11:09:37 | INFO     | main | main.py:74 | ← GET /equipment/view/DQVPJER001718033FB3000 | Status: 200 | Time: 10.16ms
+2026-05-04 11:09:37 | INFO     | main | main.py:71 | → GET /equipment/view/DQVPJER001718033FB3000 | Client: 127.0.0.1
+2026-05-04 11:09:37 | INFO     | main | main.py:74 | ← GET /equipment/view/DQVPJER001718033FB3000 | Status: 200 | Time: 17.72ms
+2026-05-04 11:09:40 | INFO     | main | main.py:71 | → GET /equipment/view/002410124-000822 | Client: 127.0.0.1
+2026-05-04 11:09:40 | INFO     | main | main.py:74 | ← GET /equipment/view/002410124-000822 | Status: 200 | Time: 9.12ms
+2026-05-04 11:09:40 | INFO     | main | main.py:71 | → GET /equipment/view/002410124-000822 | Client: 127.0.0.1
+2026-05-04 11:09:40 | INFO     | main | main.py:74 | ← GET /equipment/view/002410124-000822 | Status: 200 | Time: 21.84ms
+2026-05-04 11:09:41 | INFO     | main | main.py:71 | → GET /equipment/view/DQVPJER001718033FB3000 | Client: 127.0.0.1
+2026-05-04 11:09:41 | INFO     | main | main.py:74 | ← GET /equipment/view/DQVPJER001718033FB3000 | Status: 200 | Time: 16.31ms
+2026-05-04 11:09:41 | INFO     | main | main.py:71 | → GET /equipment/view/DQVPJER001718033FB3000 | Client: 127.0.0.1
+2026-05-04 11:09:41 | INFO     | main | main.py:74 | ← GET /equipment/view/DQVPJER001718033FB3000 | Status: 200 | Time: 22.97ms
+2026-05-04 11:10:54 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:10:54 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 82.40ms
+2026-05-04 11:10:54 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:10:54 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 86.76ms
+2026-05-04 11:11:00 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/65 | Client: 127.0.0.1
+2026-05-04 11:11:00 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/65 | Client: 127.0.0.1
+2026-05-04 11:11:00 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/65 | Status: 200 | Time: 2.56ms
+2026-05-04 11:11:00 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/65 | Status: 200 | Time: 2.20ms
+2026-05-04 11:11:00 | INFO     | main | main.py:71 | → GET /equipment/view/65 | Client: 127.0.0.1
+2026-05-04 11:11:00 | INFO     | main | main.py:74 | ← GET /equipment/view/65 | Status: 404 | Time: 20.80ms
+2026-05-04 11:11:00 | INFO     | main | main.py:71 | → GET /equipment/view/65 | Client: 127.0.0.1
+2026-05-04 11:11:00 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:11:00 | INFO     | main | main.py:74 | ← GET /equipment/view/65 | Status: 404 | Time: 47.96ms
+2026-05-04 11:11:00 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 132.23ms
+2026-05-04 11:11:00 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:11:01 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 167.09ms
+2026-05-04 11:11:04 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/2000023841916 | Client: 127.0.0.1
+2026-05-04 11:11:04 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/2000023841916 | Client: 127.0.0.1
+2026-05-04 11:11:04 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/2000023841916 | Status: 200 | Time: 2.24ms
+2026-05-04 11:11:04 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/2000023841916 | Status: 200 | Time: 1.47ms
+2026-05-04 11:11:04 | INFO     | main | main.py:71 | → GET /equipment/view/2000023841916 | Client: 127.0.0.1
+2026-05-04 11:11:04 | INFO     | main | main.py:74 | ← GET /equipment/view/2000023841916 | Status: 200 | Time: 5.51ms
+2026-05-04 11:11:04 | INFO     | main | main.py:71 | → GET /equipment/view/2000023841916 | Client: 127.0.0.1
+2026-05-04 11:11:04 | INFO     | main | main.py:74 | ← GET /equipment/view/2000023841916 | Status: 200 | Time: 7.28ms
+2026-05-04 11:11:15 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:11:15 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 135.83ms
+2026-05-04 11:11:15 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-05-04 11:11:15 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 90.83ms
