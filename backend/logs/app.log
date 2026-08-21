@@ -11466,3 +11466,283 @@ WHERE users.username = %(username_1)s
 2026-08-21 12:37:27 | INFO     | main | main.py:74 | ← GET /equipment/view/003410134-0000044 | Status: 200 | Time: 17.18ms
 2026-08-21 12:37:27 | INFO     | main | main.py:71 | → GET /equipment/view/003410134-0000044 | Client: 127.0.0.1
 2026-08-21 12:37:27 | INFO     | main | main.py:74 | ← GET /equipment/view/003410134-0000044 | Status: 200 | Time: 11.52ms
+2026-08-21 13:08:03 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-08-21 13:08:03 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-08-21 13:08:03 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-08-21 13:08:03 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-08-21 13:08:03 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 7.36ms
+2026-08-21 13:08:03 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 5.87ms
+2026-08-21 13:08:03 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 6.51ms
+2026-08-21 13:08:03 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 7.10ms
+2026-08-21 13:08:03 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:08:03 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:08:03 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 102.11ms
+2026-08-21 13:08:03 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:08:03 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 204.36ms
+2026-08-21 13:08:03 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:08:03 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 20.84ms
+2026-08-21 13:08:03 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 135.21ms
+2026-08-21 13:08:06 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-08-21 13:08:06 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-08-21 13:08:06 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 2.47ms
+2026-08-21 13:08:06 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 1.97ms
+2026-08-21 13:08:06 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:08:06 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 23.04ms
+2026-08-21 13:08:06 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:08:06 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 67.92ms
+2026-08-21 13:08:07 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:08:07 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 108.95ms
+2026-08-21 13:08:07 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:08:07 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 127.47ms
+2026-08-21 13:21:00 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-08-21 13:21:00 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-08-21 13:21:00 | INFO     | main | main.py:71 | → OPTIONS /equipment | Client: 127.0.0.1
+2026-08-21 13:21:00 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 7.91ms
+2026-08-21 13:21:00 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 2.56ms
+2026-08-21 13:21:00 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-08-21 13:21:00 | INFO     | main | main.py:74 | ← OPTIONS /equipment | Status: 200 | Time: 3.44ms
+2026-08-21 13:21:00 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:00 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 4.40ms
+2026-08-21 13:21:00 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:21:00 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 58.45ms
+2026-08-21 13:21:00 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:21:00 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 19.39ms
+2026-08-21 13:21:00 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 196.25ms
+2026-08-21 13:21:00 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:00 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 117.18ms
+2026-08-21 13:21:04 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:04 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 122.68ms
+2026-08-21 13:21:04 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:04 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 146.11ms
+2026-08-21 13:21:05 | INFO     | main | main.py:71 | → OPTIONS /users | Client: 127.0.0.1
+2026-08-21 13:21:05 | INFO     | main | main.py:71 | → OPTIONS /users/stats | Client: 127.0.0.1
+2026-08-21 13:21:05 | INFO     | main | main.py:74 | ← OPTIONS /users | Status: 200 | Time: 4.15ms
+2026-08-21 13:21:05 | INFO     | main | main.py:74 | ← OPTIONS /users/stats | Status: 200 | Time: 4.86ms
+2026-08-21 13:21:05 | INFO     | main | main.py:71 | → OPTIONS /users | Client: 127.0.0.1
+2026-08-21 13:21:05 | INFO     | main | main.py:71 | → OPTIONS /users/stats | Client: 127.0.0.1
+2026-08-21 13:21:05 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-08-21 13:21:05 | INFO     | main | main.py:74 | ← OPTIONS /users | Status: 200 | Time: 6.28ms
+2026-08-21 13:21:05 | INFO     | main | main.py:74 | ← OPTIONS /users/stats | Status: 200 | Time: 6.47ms
+2026-08-21 13:21:05 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-08-21 13:21:05 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 21.47ms
+2026-08-21 13:21:05 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-08-21 13:21:05 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 23.31ms
+2026-08-21 13:21:05 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 47.54ms
+2026-08-21 13:21:05 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-08-21 13:21:05 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 21.66ms
+2026-08-21 13:21:06 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-08-21 13:21:06 | INFO     | main | main.py:71 | → OPTIONS /history | Client: 127.0.0.1
+2026-08-21 13:21:06 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 2.81ms
+2026-08-21 13:21:06 | INFO     | main | main.py:74 | ← OPTIONS /history | Status: 200 | Time: 2.59ms
+2026-08-21 13:21:06 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:21:06 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 19.58ms
+2026-08-21 13:21:06 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:21:06 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 29.17ms
+2026-08-21 13:21:06 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:07 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 113.21ms
+2026-08-21 13:21:07 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:07 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 108.21ms
+2026-08-21 13:21:10 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:10 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 111.83ms
+2026-08-21 13:21:10 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:10 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 116.64ms
+2026-08-21 13:21:13 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:13 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 204.49ms
+2026-08-21 13:21:13 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:13 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 108.03ms
+2026-08-21 13:21:15 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/000410134-000003 | Client: 127.0.0.1
+2026-08-21 13:21:15 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/000410134-000003 | Client: 127.0.0.1
+2026-08-21 13:21:15 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/000410134-000003 | Status: 200 | Time: 2.53ms
+2026-08-21 13:21:15 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/000410134-000003 | Status: 200 | Time: 2.37ms
+2026-08-21 13:21:15 | INFO     | main | main.py:71 | → GET /equipment/view/000410134-000003 | Client: 127.0.0.1
+2026-08-21 13:21:15 | INFO     | main | main.py:74 | ← GET /equipment/view/000410134-000003 | Status: 200 | Time: 8.27ms
+2026-08-21 13:21:15 | INFO     | main | main.py:71 | → GET /equipment/view/000410134-000003 | Client: 127.0.0.1
+2026-08-21 13:21:15 | INFO     | main | main.py:74 | ← GET /equipment/view/000410134-000003 | Status: 200 | Time: 11.04ms
+2026-08-21 13:21:17 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:17 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 120.91ms
+2026-08-21 13:21:17 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:17 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 113.01ms
+2026-08-21 13:21:23 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:23 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 169.77ms
+2026-08-21 13:21:23 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:23 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 116.69ms
+2026-08-21 13:21:39 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:39 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 141.52ms
+2026-08-21 13:21:39 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:39 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 207.64ms
+2026-08-21 13:21:41 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/002410124-000799 | Client: 127.0.0.1
+2026-08-21 13:21:41 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/002410124-000799 | Client: 127.0.0.1
+2026-08-21 13:21:41 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/002410124-000799 | Status: 200 | Time: 2.31ms
+2026-08-21 13:21:41 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/002410124-000799 | Status: 200 | Time: 2.44ms
+2026-08-21 13:21:41 | INFO     | main | main.py:71 | → GET /equipment/view/002410124-000799 | Client: 127.0.0.1
+2026-08-21 13:21:41 | INFO     | main | main.py:74 | ← GET /equipment/view/002410124-000799 | Status: 200 | Time: 8.94ms
+2026-08-21 13:21:41 | INFO     | main | main.py:71 | → GET /equipment/view/002410124-000799 | Client: 127.0.0.1
+2026-08-21 13:21:41 | INFO     | main | main.py:74 | ← GET /equipment/view/002410124-000799 | Status: 200 | Time: 9.37ms
+2026-08-21 13:21:45 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:46 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 114.67ms
+2026-08-21 13:21:46 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:21:46 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 132.55ms
+2026-08-21 13:24:24 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:24 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:24:24 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 19.21ms
+2026-08-21 13:24:24 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:24:24 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 139.27ms
+2026-08-21 13:24:24 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:24 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 118.03ms
+2026-08-21 13:24:24 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 147.93ms
+2026-08-21 13:24:25 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:25 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 131.05ms
+2026-08-21 13:24:25 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:25 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 128.59ms
+2026-08-21 13:24:27 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:28 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 113.46ms
+2026-08-21 13:24:28 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:28 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 119.81ms
+2026-08-21 13:24:29 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:29 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 123.22ms
+2026-08-21 13:24:29 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:29 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 132.72ms
+2026-08-21 13:24:56 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:56 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:24:56 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 11.05ms
+2026-08-21 13:24:56 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:24:57 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 220.69ms
+2026-08-21 13:24:57 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 210.02ms
+2026-08-21 13:24:57 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:57 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 173.43ms
+2026-08-21 13:24:58 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:58 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 113.52ms
+2026-08-21 13:24:58 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:24:59 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 134.03ms
+2026-08-21 13:25:01 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:25:01 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 152.95ms
+2026-08-21 13:25:01 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:25:01 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 112.32ms
+2026-08-21 13:25:05 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:25:05 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 146.81ms
+2026-08-21 13:25:05 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:25:06 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 176.68ms
+2026-08-21 13:26:10 | INFO     | main | main.py:71 | → GET /equipment/view/002410124-000799 | Client: 127.0.0.1
+2026-08-21 13:26:11 | INFO     | main | main.py:74 | ← GET /equipment/view/002410124-000799 | Status: 200 | Time: 35.55ms
+2026-08-21 13:26:11 | INFO     | main | main.py:71 | → GET /equipment/view/002410124-000799 | Client: 127.0.0.1
+2026-08-21 13:26:11 | INFO     | main | main.py:74 | ← GET /equipment/view/002410124-000799 | Status: 200 | Time: 13.40ms
+2026-08-21 13:26:12 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:12 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 134.39ms
+2026-08-21 13:26:12 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:13 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 330.04ms
+2026-08-21 13:26:16 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:16 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 118.57ms
+2026-08-21 13:26:16 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:16 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 117.82ms
+2026-08-21 13:26:18 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:18 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 108.09ms
+2026-08-21 13:26:18 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:18 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 107.43ms
+2026-08-21 13:26:46 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:46 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:26:46 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 15.75ms
+2026-08-21 13:26:46 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:26:47 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 133.63ms
+2026-08-21 13:26:47 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:47 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 118.55ms
+2026-08-21 13:26:47 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 135.96ms
+2026-08-21 13:26:48 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-08-21 13:26:48 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-08-21 13:26:48 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 14.13ms
+2026-08-21 13:26:48 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-08-21 13:26:48 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 20.13ms
+2026-08-21 13:26:48 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-08-21 13:26:48 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 15.22ms
+2026-08-21 13:26:48 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 19.27ms
+2026-08-21 13:26:49 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:26:49 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 22.69ms
+2026-08-21 13:26:49 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:26:49 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 31.41ms
+2026-08-21 13:26:50 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:50 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 118.60ms
+2026-08-21 13:26:50 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:50 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 138.10ms
+2026-08-21 13:26:52 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:52 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 197.48ms
+2026-08-21 13:26:52 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:26:52 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 160.83ms
+2026-08-21 13:27:24 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:24 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:27:24 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 171.60ms
+2026-08-21 13:27:24 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:24 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 182.06ms
+2026-08-21 13:27:24 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:27:24 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 178.09ms
+2026-08-21 13:27:24 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 167.29ms
+2026-08-21 13:27:26 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:26 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 135.28ms
+2026-08-21 13:27:26 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:26 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 125.81ms
+2026-08-21 13:27:28 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:28 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 129.19ms
+2026-08-21 13:27:28 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:28 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 114.74ms
+2026-08-21 13:27:34 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:34 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 121.12ms
+2026-08-21 13:27:34 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:34 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 140.62ms
+2026-08-21 13:27:38 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/002410134-000194 | Client: 127.0.0.1
+2026-08-21 13:27:38 | INFO     | main | main.py:71 | → OPTIONS /equipment/view/002410134-000194 | Client: 127.0.0.1
+2026-08-21 13:27:38 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/002410134-000194 | Status: 200 | Time: 1.84ms
+2026-08-21 13:27:38 | INFO     | main | main.py:74 | ← OPTIONS /equipment/view/002410134-000194 | Status: 200 | Time: 2.03ms
+2026-08-21 13:27:38 | INFO     | main | main.py:71 | → GET /equipment/view/002410134-000194 | Client: 127.0.0.1
+2026-08-21 13:27:38 | INFO     | main | main.py:74 | ← GET /equipment/view/002410134-000194 | Status: 200 | Time: 11.55ms
+2026-08-21 13:27:38 | INFO     | main | main.py:71 | → GET /equipment/view/002410134-000194 | Client: 127.0.0.1
+2026-08-21 13:27:38 | INFO     | main | main.py:74 | ← GET /equipment/view/002410134-000194 | Status: 200 | Time: 7.69ms
+2026-08-21 13:27:49 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:49 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:27:50 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 21.20ms
+2026-08-21 13:27:50 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:27:50 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 209.74ms
+2026-08-21 13:27:50 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 188.13ms
+2026-08-21 13:27:50 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:50 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 128.41ms
+2026-08-21 13:27:51 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:51 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 117.05ms
+2026-08-21 13:27:51 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:51 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 122.97ms
+2026-08-21 13:27:52 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:27:52 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 17.55ms
+2026-08-21 13:27:52 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:27:52 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 20.93ms
+2026-08-21 13:27:53 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:53 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 157.16ms
+2026-08-21 13:27:53 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:27:54 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 128.82ms
+2026-08-21 13:27:55 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:27:55 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 16.16ms
+2026-08-21 13:27:55 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:27:55 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 48.87ms
+2026-08-21 13:27:56 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-08-21 13:27:56 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-08-21 13:27:56 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 15.89ms
+2026-08-21 13:27:56 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-08-21 13:27:56 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 25.70ms
+2026-08-21 13:27:56 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-08-21 13:27:56 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 13.61ms
+2026-08-21 13:27:56 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 19.71ms
+2026-08-21 13:28:12 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:28:12 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 26.40ms
+2026-08-21 13:28:12 | INFO     | main | main.py:71 | → GET /history | Client: 127.0.0.1
+2026-08-21 13:28:12 | INFO     | main | main.py:74 | ← GET /history | Status: 200 | Time: 36.48ms
+2026-08-21 13:28:13 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:28:13 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 117.70ms
+2026-08-21 13:28:13 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:28:13 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 177.58ms
+2026-08-21 13:28:14 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-08-21 13:28:14 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-08-21 13:28:14 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 12.98ms
+2026-08-21 13:28:14 | INFO     | main | main.py:71 | → GET /users | Client: 127.0.0.1
+2026-08-21 13:28:14 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 18.23ms
+2026-08-21 13:28:14 | INFO     | main | main.py:71 | → GET /users/stats | Client: 127.0.0.1
+2026-08-21 13:28:14 | INFO     | main | main.py:74 | ← GET /users | Status: 200 | Time: 12.86ms
+2026-08-21 13:28:14 | INFO     | main | main.py:74 | ← GET /users/stats | Status: 200 | Time: 19.93ms
+2026-08-21 13:28:23 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:28:23 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 156.60ms
+2026-08-21 13:28:23 | INFO     | main | main.py:71 | → GET /equipment | Client: 127.0.0.1
+2026-08-21 13:28:23 | INFO     | main | main.py:74 | ← GET /equipment | Status: 200 | Time: 120.85ms
